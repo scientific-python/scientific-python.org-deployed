@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>About on Scientific Python Ecosystem</title>
+    <link>https://scientific-python.org/about/</link>
+    <description>Recent content in About on Scientific Python Ecosystem</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 06 Jan 2021 09:11:39 -0800</lastBuildDate><atom:link href="https://scientific-python.org/about/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>People</title>
+      <link>https://scientific-python.org/about/people/</link>
+      <pubDate>Fri, 18 Dec 2020 08:52:39 -0800</pubDate>
+      
+      <guid>https://scientific-python.org/about/people/</guid>
+      <description>Team  Jarrod Millman    Ross Barnowski    Stéfan van der Walt    SPEC Steering Committee  Brigitta Sipőcz    Elliott Sales de Andrade    Georgiana Dolocan    Jarrod Millman    Joris Van den Bossche    Juan Nunez-Iglesias    Juanita Gomez    Kira Evans    Kristen Thyng    Lucy Liu    Madicken Munk    Matthias Bussonnier    Melissa Weber Mendonça    Paul Ivanov    Ralf Gommers    Ross Barnowski    Stéfan van der Walt    Advisory Council  TBN  </description>
+    </item>
+    
+  </channel>
+</rss>

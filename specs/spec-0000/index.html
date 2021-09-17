@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>SPEC 0 — Minimum Supported Versions - Scientific Python Ecosystem</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+
+	<link rel="stylesheet" href="/css/style.css">
+
+        <link rel="stylesheet" href="/css/custom.css">
+
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container header__container">
+		
+	<div class="logo logo--mixed">
+		<a class="logo__link" href="/" title="Planning for the next decade" rel="home">
+			<div class="logo__item logo__imagebox">
+					<img class="logo__img" src="/img/logo.svg">
+				</div><div class="logo__item logo__text">
+					<div class="logo__title">Planning for the next decade</div>
+					<div class="logo__tagline">Scientific Python Ecosystem</div>
+				</div>
+		</a>
+	</div>
+		
+<nav class="menu">
+	<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
+		<span class="menu__btn-title" tabindex="-1">Menu</span>
+	</button>
+	<ul class="menu__list">
+		<li class="menu__item">
+			<a class="menu__link" href="/">
+				
+				<span class="menu__text">Home</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/specs/">
+				
+				<span class="menu__text">SPECS</span>
+				
+			</a>
+		</li>
+	</ul>
+</nav>
+
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+  <article class="post">
+    <header class="post__header">
+      <h1 class="post__title">SPEC 0 — Minimum Supported Versions</h1>
+        
+          <p>
+            <div class="notice warning-notice">
+              <div class="notice-type">🛈  &nbsp;This is a draft document.</div>
+            </div>
+          </p>
+        
+        
+          <div class="post__meta meta">
+
+<div class="spec-meta">
+  <table>
+    
+      
+        
+        <tr class="field">
+          <td class="field-name">
+            Authors:
+          </td>
+            <td class="field-value">
+              
+                Jarrod Millman &lt;millman@berkeley.edu&gt;,
+            
+              
+                Ross Barnowski &lt;rossbar@berkeley.edu&gt;,
+            
+              
+                Stéfan van der Walt &lt;stefanv@berkeley.edu&gt;
+            
+            </td></tr>
+      
+        <tr class="field">
+          <td class="field-name">
+            Discussion:
+          </td>
+            <td class="field-value">
+              <a href="https://discuss.scientific-python.org/t/spec-0-minimum-supported-versions/33">https://discuss.scientific-python.org/t/spec-0-minimum-supported-versions/33</a>
+            </td></tr>
+      
+        
+        
+        
+        <tr class="field">
+          <td class="field-name">
+            History:
+          </td>
+            <td class="field-value">
+              <!-- raw HTML omitted --><a href="https://github.com/scientific-python/specs/commits/main/spec-0000.md">https://github.com/scientific-python/specs/commits/main/spec-0000.md</a><!-- raw HTML omitted -->
+            </td></tr>
+      
+        <tr class="field">
+          <td class="field-name">
+            Endorsed by:
+          </td>
+            <td class="field-value">
+              
+            </td></tr></table>
+</div>
+
+</div>
+          
+    </header><div class="content post__content clearfix">
+        <h1 id="description">Description</h1>
+<p>This SPEC recommends that all projects across the Scientific Python ecosystem adopt a common time-based policy for dropping support of older Python and core package versions.</p>
+<p>All versions refer to feature releases (i.e., Python 3.8.0, NumPy 1.19.0; not Python 3.8.1, NumPy 1.19.2).</p>
+<p>Specifically, we recommend that:</p>
+<ol>
+<li>Support for a given version of Python be dropped <strong>3 years</strong> after its initial release.</li>
+<li>Support for a given version of other core packages be dropped <strong>2 years</strong> after their initial release.</li>
+</ol>
+<p>We illustrate this SPEC with release dates of NumPy, SciPy, and Matplotlib.</p>
+<!-- raw HTML omitted -->
+
+<script async src="https://unpkg.com/mermaid@8.8.4/dist/mermaid.min.js"></script>
+<div class="mermaid">
+  
+gantt
+dateFormat  YYYY-MM-DD
+axisFormat  %m / %Y
+title Support Window
+
+section Python
+3.7  :     py37, 2018-06-27,2021-06-26
+3.8  :     py38, 2019-10-14,2022-10-13
+3.9  :     py39, 2020-10-05,2023-10-05
+
+section NumPy
+1.17  :     np117, 2019-07-26,2021-07-25
+1.18  :     np118, 2019-12-22,2021-12-21
+1.19  :     np119, 2020-06-20,2022-06-20
+
+section SciPy
+1.3  :     sp13, 2019-05-17,2021-05-16
+1.4  :     sp14, 2019-12-16,2021-12-15
+1.5  :     sp15, 2020-06-21,2022-06-21
+1.6  :     sp16, 2020-12-31,2022-12-31
+
+section Matplotlib
+3.1  :     mpl31, 2019-05-18,2021-05-17
+3.2  :     mpl32, 2020-03-04,2022-03-04
+3.3  :     mpl33, 2020-07-16,2022-07-16
+
+
+</div>
+
+<!-- raw HTML omitted -->
+<h2 id="motivation">Motivation</h2>
+<p>Limiting the scope of supported dependencies is an effective way for packages to limit maintenance burden.
+Combinations of packages need to be tested, which impacts also on continuous integration times and infrastructure upkeep.
+Code itself also becomes more complicated when it has to be aware of various combinations of configurations.</p>
+<p>Adoption of this SPEC will ensure a consistent support policy across packages, and reduce the need for individual projects to divise similar policies.</p>
+<p>Ultimately, reduced maintenance burden frees up developer time, which translates into more features, bugfixes, and optimizations for users.</p>
+<h2 id="background">Background</h2>
+<p>In the past, longer support cycles were common.
+There were several reasons for this, including the Python 2 / 3 transition, difficulties installing packages, and users needing to use old, operating-system provided versions of Python.
+The situation has since improved due to improved installations via binary wheels, virtual environments becoming commonplace, and support for Python 2 being dropped.</p>
+<h2 id="drop-schedule">Drop Schedule</h2>
+<pre><code>On May 16, 2021 drop support for SciPy 1.3 (initially released on May 17, 2019)
+On May 17, 2021 drop support for Matplotlib 3.1 (initially released on May 18, 2019)
+On Jun 26, 2021 drop support for Python 3.7 (initially released on Jun 27, 2018)
+On Jul 25, 2021 drop support for NumPy 1.17 (initially released on Jul 26, 2019)
+On Dec 15, 2021 drop support for SciPy 1.4 (initially released on Dec 16, 2019)
+On Dec 21, 2021 drop support for NumPy 1.18 (initially released on Dec 22, 2019)
+On Mar 04, 2022 drop support for Matplotlib 3.2 (initially released on Mar 04, 2020)
+On Jun 20, 2022 drop support for NumPy 1.19 (initially released on Jun 20, 2020)
+On Jun 21, 2022 drop support for SciPy 1.5 (initially released on Jun 21, 2020)
+On Jul 16, 2022 drop support for Matplotlib 3.3 (initially released on Jul 16, 2020)
+On Oct 13, 2022 drop support for Python 3.8 (initially released on Oct 14, 2019)
+On Dec 31, 2022 drop support for SciPy 1.6 (initially released on Dec 31, 2020)
+On Oct 05, 2023 drop support for Python 3.9 (initially released on Oct 05, 2020)
+</code></pre>
+<h1 id="implementation">Implementation</h1>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<h2 id="core-project-endorsement">Core Project Endorsement</h2>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<h2 id="ecosystem-adoption">Ecosystem Adoption</h2>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<h1 id="notes">Notes</h1>
+<ul>
+<li>
+<p>This document builds on <a href="https://numpy.org/neps/nep-0029-deprecation_policy.html">NEP 29</a>, which describes several alternatives including ad hoc version support, all CPython supported versions, default version on Linux distribution, N minor versions of Python, and time window from the X.Y.1 Python release.</p>
+</li>
+<li>
+<p>Code to generate support and drop schedule tables:</p>
+</li>
+</ul>
+
+<div class="readcode">
+  <div class="readcode-download">
+    <a href='spec-0000/versions.py' download>Download versions.py</a>
+  </div>
+  <div class="readcode-code"><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">from</span> datetime <span style="color:#f92672">import</span> datetime, timedelta
+
+plus36 <span style="color:#f92672">=</span> timedelta(days<span style="color:#f92672">=</span>int(<span style="color:#ae81ff">365</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">3</span>))
+plus24 <span style="color:#f92672">=</span> timedelta(days<span style="color:#f92672">=</span>int(<span style="color:#ae81ff">365</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">2</span>))
+
+<span style="color:#75715e"># Release data</span>
+
+py_releases <span style="color:#f92672">=</span> {
+    <span style="color:#ae81ff">3.7</span>: <span style="color:#e6db74">&#34;Jun 27, 2018&#34;</span>,
+    <span style="color:#ae81ff">3.8</span>: <span style="color:#e6db74">&#34;Oct 14, 2019&#34;</span>,
+    <span style="color:#ae81ff">3.9</span>: <span style="color:#e6db74">&#34;Oct 5, 2020&#34;</span>,
+}
+
+np_releases <span style="color:#f92672">=</span> {
+    <span style="color:#ae81ff">1.17</span>: <span style="color:#e6db74">&#34;Jul 26, 2019&#34;</span>,
+    <span style="color:#ae81ff">1.18</span>: <span style="color:#e6db74">&#34;Dec 22, 2019&#34;</span>,
+    <span style="color:#ae81ff">1.19</span>: <span style="color:#e6db74">&#34;Jun 20, 2020&#34;</span>,
+}
+
+sp_releases <span style="color:#f92672">=</span> {
+    <span style="color:#ae81ff">1.3</span>: <span style="color:#e6db74">&#34;May 17, 2019&#34;</span>,
+    <span style="color:#ae81ff">1.4</span>: <span style="color:#e6db74">&#34;Dec 16, 2019&#34;</span>,
+    <span style="color:#ae81ff">1.5</span>: <span style="color:#e6db74">&#34;Jun 21, 2020&#34;</span>,
+    <span style="color:#ae81ff">1.6</span>: <span style="color:#e6db74">&#34;Dec 31, 2020&#34;</span>,
+}
+
+mpl_releases <span style="color:#f92672">=</span> {
+    <span style="color:#ae81ff">3.1</span>: <span style="color:#e6db74">&#34;May 18, 2019&#34;</span>,
+    <span style="color:#ae81ff">3.2</span>: <span style="color:#e6db74">&#34;Mar 4, 2020&#34;</span>,
+    <span style="color:#ae81ff">3.3</span>: <span style="color:#e6db74">&#34;Jul 16, 2020&#34;</span>,
+}
+
+<span style="color:#75715e"># Get support window</span>
+
+
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">support_window</span>(project, releases, support_time):
+    windows <span style="color:#f92672">=</span> []
+    <span style="color:#66d9ef">for</span> version, release_date <span style="color:#f92672">in</span> releases<span style="color:#f92672">.</span>items():
+        release <span style="color:#f92672">=</span> datetime<span style="color:#f92672">.</span>strptime(release_date, <span style="color:#e6db74">&#34;%b </span><span style="color:#e6db74">%d</span><span style="color:#e6db74">, %Y&#34;</span>)
+        drop <span style="color:#f92672">=</span> release <span style="color:#f92672">+</span> support_time
+        windows<span style="color:#f92672">.</span>append((project, version, release, drop))
+    <span style="color:#66d9ef">return</span> windows
+
+
+py_support_window <span style="color:#f92672">=</span> support_window(<span style="color:#e6db74">&#34;Python&#34;</span>, py_releases, plus36)
+np_support_window <span style="color:#f92672">=</span> support_window(<span style="color:#e6db74">&#34;NumPy&#34;</span>, np_releases, plus24)
+sp_support_window <span style="color:#f92672">=</span> support_window(<span style="color:#e6db74">&#34;SciPy&#34;</span>, sp_releases, plus24)
+mpl_support_window <span style="color:#f92672">=</span> support_window(<span style="color:#e6db74">&#34;Matplotlib&#34;</span>, mpl_releases, plus24)
+
+
+<span style="color:#75715e"># Print Gantt chart</span>
+
+
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">gantt_section</span>(window, prefix):
+    section <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&#34;</span>
+    <span style="color:#66d9ef">for</span> project, version, release, drop <span style="color:#f92672">in</span> window:
+        version_name <span style="color:#f92672">=</span> prefix <span style="color:#f92672">+</span> str(version)<span style="color:#f92672">.</span>replace(<span style="color:#e6db74">&#34;.&#34;</span>, <span style="color:#e6db74">&#34;&#34;</span>)
+        release_date <span style="color:#f92672">=</span> release<span style="color:#f92672">.</span>strftime(<span style="color:#e6db74">&#34;%Y-%m-</span><span style="color:#e6db74">%d</span><span style="color:#e6db74">&#34;</span>)
+        drop_date <span style="color:#f92672">=</span> drop<span style="color:#f92672">.</span>strftime(<span style="color:#e6db74">&#34;%Y-%m-</span><span style="color:#e6db74">%d</span><span style="color:#e6db74">&#34;</span>)
+        section <span style="color:#f92672">+=</span> f<span style="color:#e6db74">&#34;{version}  :     {version_name}, {release_date},{drop_date}</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>
+    <span style="color:#66d9ef">return</span> section
+
+
+py_gantt_section <span style="color:#f92672">=</span> gantt_section(py_support_window, <span style="color:#e6db74">&#34;py&#34;</span>)
+np_gantt_section <span style="color:#f92672">=</span> gantt_section(np_support_window, <span style="color:#e6db74">&#34;np&#34;</span>)
+sp_gantt_section <span style="color:#f92672">=</span> gantt_section(sp_support_window, <span style="color:#e6db74">&#34;sp&#34;</span>)
+mpl_gantt_section <span style="color:#f92672">=</span> gantt_section(mpl_support_window, <span style="color:#e6db74">&#34;mpl&#34;</span>)
+
+gantt <span style="color:#f92672">=</span> f<span style="color:#e6db74">&#34;&#34;&#34;
+</span><span style="color:#e6db74">&lt;!-- prettier-ignore-start --&gt;
+</span><span style="color:#e6db74">{{{{&lt;mermaid&gt;}}}}
+</span><span style="color:#e6db74">gantt
+</span><span style="color:#e6db74">dateFormat  YYYY-MM-DD
+</span><span style="color:#e6db74">axisFormat  %m / %Y
+</span><span style="color:#e6db74">title Support Window
+</span><span style="color:#e6db74">
+</span><span style="color:#e6db74">section Python
+</span><span style="color:#e6db74">{py_gantt_section}
+</span><span style="color:#e6db74">section NumPy
+</span><span style="color:#e6db74">{np_gantt_section}
+</span><span style="color:#e6db74">section SciPy
+</span><span style="color:#e6db74">{sp_gantt_section}
+</span><span style="color:#e6db74">section Matplotlib
+</span><span style="color:#e6db74">{mpl_gantt_section}
+</span><span style="color:#e6db74">{{{{&lt;/mermaid&gt;}}}}
+</span><span style="color:#e6db74">&lt;!-- prettier-ignore-end --&gt;
+</span><span style="color:#e6db74">&#34;&#34;&#34;</span>
+
+<span style="color:#66d9ef">print</span>(gantt)
+
+<span style="color:#75715e"># Print drop schedule</span>
+
+
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">get_drop_dates</span>(window):
+    <span style="color:#66d9ef">return</span> {<span style="color:#e6db74">&#34; &#34;</span><span style="color:#f92672">.</span>join([proj, str(ver)]): [rel, drop] <span style="color:#66d9ef">for</span> proj, ver, rel, drop <span style="color:#f92672">in</span> window}
+
+
+py_drop <span style="color:#f92672">=</span> get_drop_dates(py_support_window)
+np_drop <span style="color:#f92672">=</span> get_drop_dates(np_support_window)
+sp_drop <span style="color:#f92672">=</span> get_drop_dates(sp_support_window)
+mpl_drop <span style="color:#f92672">=</span> get_drop_dates(mpl_support_window)
+
+releases <span style="color:#f92672">=</span> py_drop <span style="color:#f92672">|</span> np_drop <span style="color:#f92672">|</span> sp_drop <span style="color:#f92672">|</span> mpl_drop
+releases <span style="color:#f92672">=</span> dict(sorted(releases<span style="color:#f92672">.</span>items(), key<span style="color:#f92672">=</span><span style="color:#66d9ef">lambda</span> item: item[<span style="color:#ae81ff">1</span>][<span style="color:#ae81ff">1</span>]))
+
+<span style="color:#66d9ef">for</span> package, dates <span style="color:#f92672">in</span> releases<span style="color:#f92672">.</span>items():
+    <span style="color:#66d9ef">print</span>(
+        f<span style="color:#e6db74">&#34;On {dates[1].strftime(&#39;%b </span><span style="color:#e6db74">%d</span><span style="color:#e6db74">, %Y&#39;)} drop support for {package} &#34;</span>
+        f<span style="color:#e6db74">&#34;(initially released on {dates[0].strftime(&#39;%b </span><span style="color:#e6db74">%d</span><span style="color:#e6db74">, %Y&#39;)})&#34;</span>
+    )
+</code></pre></div></div>
+</div>
+
+
+      </div>
+  </article>
+</main>
+
+
+
+
+
+			</div>
+			
+
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2021 Scientific Python Ecosystem.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="/js/menu.js"></script>
+</body>
+</html>

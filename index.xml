@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Planning for the Next Decade of Scientific Python on Scientific Python Ecosystem</title>
+    <link>https://scientific-python.org/</link>
+    <description>Recent content in Planning for the Next Decade of Scientific Python on Scientific Python Ecosystem</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 27 Jul 2018 11:18:53 -0700</lastBuildDate><atom:link href="https://scientific-python.org/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Who needs a plan anyway?</title>
+      <link>https://scientific-python.org/posts/plan/</link>
+      <pubDate>Fri, 18 Dec 2020 09:55:24 -0800</pubDate>
+      
+      <guid>https://scientific-python.org/posts/plan/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>People</title>
+      <link>https://scientific-python.org/about/people/</link>
+      <pubDate>Fri, 18 Dec 2020 08:52:39 -0800</pubDate>
+      
+      <guid>https://scientific-python.org/about/people/</guid>
+      <description>Team  Jarrod Millman    Ross Barnowski    Stéfan van der Walt    SPEC Steering Committee  Brigitta Sipőcz    Elliott Sales de Andrade    Georgiana Dolocan    Jarrod Millman    Joris Van den Bossche    Juan Nunez-Iglesias    Juanita Gomez    Kira Evans    Kristen Thyng    Lucy Liu    Madicken Munk    Matthias Bussonnier    Melissa Weber Mendonça    Paul Ivanov    Ralf Gommers    Ross Barnowski    Stéfan van der Walt    Advisory Council  TBN  </description>
+    </item>
+    
+    <item>
+      <title>SPEC 0 — Minimum Supported Versions</title>
+      <link>https://scientific-python.org/specs/spec-0000/</link>
+      <pubDate>Thu, 17 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://scientific-python.org/specs/spec-0000/</guid>
+      <description>Description This SPEC recommends that all projects across the Scientific Python ecosystem adopt a common time-based policy for dropping support of older Python and core package versions.
+All versions refer to feature releases (i.e., Python 3.8.0, NumPy 1.19.0; not Python 3.8.1, NumPy 1.19.2).
+Specifically, we recommend that:
+ Support for a given version of Python be dropped 3 years after its initial release. Support for a given version of other core packages be dropped 2 years after their initial release.</description>
+    </item>
+    
+    <item>
+      <title>SPEC 1 — Lazy Loading for Submodules</title>
+      <link>https://scientific-python.org/specs/spec-0001/</link>
+      <pubDate>Thu, 17 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://scientific-python.org/specs/spec-0001/</guid>
+      <description>Description Early on, most scientific Python packages explicitly imported their submodules. For example, you would be able to do:
+import scipy as sp sp.linalg.eig(...) This was convenient: it had the simplicity of a flat namespace, but with the organization of a nested one. However, there was one drawback: importing submodules, especially large ones, introduced unacceptable slowdowns.
+For a while, SciPy had a lazy loading mechanism called PackageLoader. It was eventually dropped, because it failed frequently and in confusing ways—especially when used with interactive prompts.</description>
+    </item>
+    
+    <item>
+      <title>SPEC Purpose and Process</title>
+      <link>https://scientific-python.org/specs/purpose-and-process/</link>
+      <pubDate>Thu, 17 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://scientific-python.org/specs/purpose-and-process/</guid>
+      <description>Description The SPEC process is designed to identify areas of shared concern between projects in the scientific Python ecosystem and to produce collaboratively written, community adopted guidelines for addressing these. Such guidelines are known as SPECs: Scientific Python Ecosystem Coordination documents.
+Specifically, the purpose of the SPEC process is
+ to help unify the ecosystem for users and developers; to provide guidance to projects on technical issues or processes; to document standard APIs, development tools, and community practices; and to foster ecosystem-wide discussions of common problems and to develop shared solutions.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://scientific-python.org/specs/readme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://scientific-python.org/specs/readme/</guid>
+      <description>SPEC The Scientific Python Ecosystem Coordination (SPEC) mechanism is used to recommend project policies, coding conventions, and standard tooling.
+See https://scientific-python.org/specs/</description>
+    </item>
+    
+    <item>
+      <title>Brigitta Sipőcz</title>
+      <link>https://scientific-python.org/specs/steering-committee/brigitta_sip%C5%91cz/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://scientific-python.org/specs/steering-committee/brigitta_sip%C5%91cz/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Code of Conduct</title>
+      <link>https://scientific-python.org/code_of_conduct/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://scientific-python.org/code_of_conduct/</guid>
+      <description>This code of conduct applies to all spaces managed by the scientific Python ecosystem project, including all public and private mailing lists, issue trackers, wikis, and any other communication channel used by our community.
+This code of conduct should be honored by everyone who participates in the scientific Python ecosystem community formally or informally, or claims any affiliation with the project, in any project-related activities and especially when representing the project, in any role.</description>
+    </item>
+    
+    <item>
+      <title>Elliott Sales de Andrade</title>
+      <link>https://scientific-python.org/specs/steering-committee/elliott_sales_de_andrade/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://scientific-python.org/specs/steering-committee/elliott_sales_de_andrade/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Georgiana Dolocan</title>
+      <link>https://scientific-python.org/specs/steering-committee/georgiana_dolocan/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://scientific-python.org/specs/steering-committee/georgiana_dolocan/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>IPython</title>
+      <link>https://scientific-python.org/specs/core-projects/ipython/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://scientific-python.org/specs/core-projects/ipython/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Jarrod Millman</title>
+      <link>https://scientific-python.org/about/core/jarrod_millman/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://scientific-python.org/about/core/jarrod_millman/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Jarrod Millman</title>
+      <link>https://scientific-python.org/specs/steering-committee/jarrod_millman/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://scientific-python.org/specs/steering-committee/jarrod_millman/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Joris Van den Bossche</title>
+      <link>https://scientific-python.org/specs/steering-committee/joris_van_den_bossche/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://scientific-python.org/specs/steering-committee/joris_van_den_bossche/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Juan Nunez-Iglesias</title>
+      <link>https://scientific-python.org/specs/steering-committee/juan_nunez-iglesias/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://scientific-python.org/specs/steering-committee/juan_nunez-iglesias/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Juanita Gomez</title>
+      <link>https://scientific-python.org/specs/steering-committee/juanita_gomez/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://scientific-python.org/specs/steering-committee/juanita_gomez/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Kira Evans</title>
+      <link>https://scientific-python.org/specs/steering-committee/kira_evans/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://scientific-python.org/specs/steering-committee/kira_evans/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Kristen Thyng</title>
+      <link>https://scientific-python.org/specs/steering-committee/kristen_thyng/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://scientific-python.org/specs/steering-committee/kristen_thyng/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Lucy Liu</title>
+      <link>https://scientific-python.org/specs/steering-committee/lucy_liu/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://scientific-python.org/specs/steering-committee/lucy_liu/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Madicken Munk</title>
+      <link>https://scientific-python.org/specs/steering-committee/madicken_munk/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://scientific-python.org/specs/steering-committee/madicken_munk/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Matplotlib</title>
+      <link>https://scientific-python.org/specs/core-projects/matplotlib/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://scientific-python.org/specs/core-projects/matplotlib/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Matthias Bussonnier</title>
+      <link>https://scientific-python.org/specs/steering-committee/matthias_bussonnier/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://scientific-python.org/specs/steering-committee/matthias_bussonnier/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Melissa Weber Mendonça</title>
+      <link>https://scientific-python.org/specs/steering-committee/melissa_weber_mendon%C3%A7a/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://scientific-python.org/specs/steering-committee/melissa_weber_mendon%C3%A7a/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>NetworkX</title>
+      <link>https://scientific-python.org/specs/core-projects/networkx/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://scientific-python.org/specs/core-projects/networkx/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>NumPy</title>
+      <link>https://scientific-python.org/specs/core-projects/numpy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://scientific-python.org/specs/core-projects/numpy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>pandas</title>
+      <link>https://scientific-python.org/specs/core-projects/pandas/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://scientific-python.org/specs/core-projects/pandas/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Paul Ivanov</title>
+      <link>https://scientific-python.org/specs/steering-committee/paul_ivanov/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://scientific-python.org/specs/steering-committee/paul_ivanov/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ralf Gommers</title>
+      <link>https://scientific-python.org/specs/steering-committee/ralf_gommers/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://scientific-python.org/specs/steering-committee/ralf_gommers/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ross Barnowski</title>
+      <link>https://scientific-python.org/about/core/ross_barnowski/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://scientific-python.org/about/core/ross_barnowski/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ross Barnowski</title>
+      <link>https://scientific-python.org/specs/steering-committee/ross_barnowski/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://scientific-python.org/specs/steering-committee/ross_barnowski/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>scikit-image</title>
+      <link>https://scientific-python.org/specs/core-projects/scikit-image/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://scientific-python.org/specs/core-projects/scikit-image/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>scikit-learn</title>
+      <link>https://scientific-python.org/specs/core-projects/scikit-learn/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://scientific-python.org/specs/core-projects/scikit-learn/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SciPy</title>
+      <link>https://scientific-python.org/specs/core-projects/scipy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://scientific-python.org/specs/core-projects/scipy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Stéfan van der Walt</title>
+      <link>https://scientific-python.org/about/core/stefan_van_der_walt/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://scientific-python.org/about/core/stefan_van_der_walt/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Stéfan van der Walt</title>
+      <link>https://scientific-python.org/specs/steering-committee/st%C3%A9fan_van_der_walt/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://scientific-python.org/specs/steering-committee/st%C3%A9fan_van_der_walt/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

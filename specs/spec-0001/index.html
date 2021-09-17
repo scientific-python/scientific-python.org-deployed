@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>SPEC 1 — Lazy Loading for Submodules - Scientific Python Ecosystem</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+
+	<link rel="stylesheet" href="/css/style.css">
+
+        <link rel="stylesheet" href="/css/custom.css">
+
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container header__container">
+		
+	<div class="logo logo--mixed">
+		<a class="logo__link" href="/" title="Planning for the next decade" rel="home">
+			<div class="logo__item logo__imagebox">
+					<img class="logo__img" src="/img/logo.svg">
+				</div><div class="logo__item logo__text">
+					<div class="logo__title">Planning for the next decade</div>
+					<div class="logo__tagline">Scientific Python Ecosystem</div>
+				</div>
+		</a>
+	</div>
+		
+<nav class="menu">
+	<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
+		<span class="menu__btn-title" tabindex="-1">Menu</span>
+	</button>
+	<ul class="menu__list">
+		<li class="menu__item">
+			<a class="menu__link" href="/">
+				
+				<span class="menu__text">Home</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/specs/">
+				
+				<span class="menu__text">SPECS</span>
+				
+			</a>
+		</li>
+	</ul>
+</nav>
+
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+  <article class="post">
+    <header class="post__header">
+      <h1 class="post__title">SPEC 1 — Lazy Loading for Submodules</h1>
+        
+          <p>
+            <div class="notice warning-notice">
+              <div class="notice-type">🛈  &nbsp;This is a draft document.</div>
+            </div>
+          </p>
+        
+        
+          <div class="post__meta meta">
+
+<div class="spec-meta">
+  <table>
+    
+      
+        
+        <tr class="field">
+          <td class="field-name">
+            Authors:
+          </td>
+            <td class="field-value">
+              
+                Stéfan van der Walt &lt;stefanv@berkeley.edu&gt;,
+            
+              
+                Jon Crall &lt;jon.crall@kitware.com&gt;,
+            
+              
+                Dan Schult &lt;dschult@colgate.edu&gt;
+            
+            </td></tr>
+      
+        <tr class="field">
+          <td class="field-name">
+            Discussion:
+          </td>
+            <td class="field-value">
+              <a href="https://discuss.scientific-python.org/t/spec-1-lazy-loading-for-submodules/25">https://discuss.scientific-python.org/t/spec-1-lazy-loading-for-submodules/25</a>
+            </td></tr>
+      
+        
+        
+        
+        <tr class="field">
+          <td class="field-name">
+            History:
+          </td>
+            <td class="field-value">
+              <!-- raw HTML omitted --><a href="https://github.com/scientific-python/specs/commits/main/spec-0001.md">https://github.com/scientific-python/specs/commits/main/spec-0001.md</a><!-- raw HTML omitted -->
+            </td></tr>
+      
+        <tr class="field">
+          <td class="field-name">
+            Endorsed by:
+          </td>
+            <td class="field-value">
+              
+            </td></tr></table>
+</div>
+
+</div>
+          
+    </header><div class="content post__content clearfix">
+        <h1 id="description">Description</h1>
+<p>Early on, most scientific Python packages explicitly imported their submodules.
+For example, you would be able to do:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> scipy <span style="color:#f92672">as</span> sp
+
+sp<span style="color:#f92672">.</span>linalg<span style="color:#f92672">.</span>eig(<span style="color:#f92672">...</span>)
+</code></pre></div><p>This was convenient: it had the simplicity of a flat namespace, but with the organization of a nested one.
+However, there was one drawback: importing submodules, especially large ones, introduced unacceptable slowdowns.</p>
+<p>For a while, SciPy had a lazy loading mechanism called <code>PackageLoader</code>.
+It was eventually dropped, because it failed frequently and in confusing ways—especially when used with interactive prompts.</p>
+<p>Thereafter, most libraries stopped importing submodules and relied on documentation to tell users which submodules to import.</p>
+<p>Commonly, code now reads:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">from</span> scipy <span style="color:#f92672">import</span> linalg
+linalg<span style="color:#f92672">.</span>eig(<span style="color:#f92672">...</span>)
+</code></pre></div><p>Since the <code>linalg</code> submodule often conflicts with similar instances in other libraries, users also write:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Invent an arbitrary name for each submodule</span>
+<span style="color:#f92672">import</span> scipy.linalg <span style="color:#f92672">as</span> sla
+sla<span style="color:#f92672">.</span>eig(<span style="color:#f92672">...</span>)
+</code></pre></div><p>or</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Import individual functions, making it harder to know where they are from</span>
+<span style="color:#75715e"># later on in code.</span>
+<span style="color:#f92672">from</span> scipy.linalg <span style="color:#f92672">import</span> eig
+eig(<span style="color:#f92672">...</span>)
+</code></pre></div><p>This SPEC proposes a lazy loading mechanism—targeted at libraries—that avoids import slowdowns and brings back explicit submodule exports, but without slowing down imports.</p>
+<p>For example, it allows the following behavior:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> skimage <span style="color:#f92672">as</span> ski  <span style="color:#75715e"># cheap operation; does not load submodules</span>
+
+ski<span style="color:#f92672">.</span>filters  <span style="color:#75715e"># cheap operation; loads the filters submodule, but not</span>
+             <span style="color:#75715e"># any of its submodules or functions</span>
+
+ski<span style="color:#f92672">.</span>filters<span style="color:#f92672">.</span>gaussian(<span style="color:#f92672">...</span>)  <span style="color:#75715e"># loads the file in which gaussian is implemented</span>
+                           <span style="color:#75715e"># and calls that function</span>
+
+</code></pre></div><p>This has several advantages:</p>
+<ol>
+<li>
+<p>It exposes a <strong>nested namespace that behaves as a flat namespace</strong>.
+This avoids carefully having to import exactly the right combination of submodules, and allows interactive exploration of the namespace in an interactive terminal.</p>
+</li>
+<li>
+<p>It <strong>avoids having to optimize for import cost</strong>.
+Currently, developers often move imports inside of functions to avoid slowing down importing their module.
+Lazy importing makes imports at any depth in the hierarchy cheap.</p>
+</li>
+<li>
+<p>It provides <strong>direct access to submodules</strong>, avoiding local namespace conflicts.
+Instead of doing <code>import scipy.linalg as sla</code> to avoid clobbering a local <code>linalg</code>, one can now assign a short name to each library and access its members directly: <code>import scipy as sp; sp.linalg</code>.</p>
+</li>
+</ol>
+<h3 id="usage">Usage</h3>
+<p>Python 3.7, with <a href="https://www.python.org/dev/peps/pep-0562/">PEP 562</a>, introduces the ability to override module <code>__getattr__</code> and <code>__dir__</code>.
+In combination, these features make it possible to again provide access to submodules, but without incurring performance penalties.</p>
+<p>We propose a utility library for easily setting up so-called &ldquo;lazy imports&rdquo; so that submodules are only loaded upon accessing them.</p>
+<p>As an example, we will show how to set up lazy importing for <code>skimage.filters</code>.
+In the library&rsquo;s main <code>__init__.py</code>, specify which submodules are lazily loaded:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">submodules <span style="color:#f92672">=</span> [
+    <span style="color:#f92672">...</span>
+    <span style="color:#e6db74">&#39;filters&#39;</span>,
+    <span style="color:#f92672">...</span>
+]
+
+<span style="color:#f92672">from</span> .util <span style="color:#f92672">import</span> lazy
+__getattr__, __dir__, _ <span style="color:#f92672">=</span> lazy<span style="color:#f92672">.</span>attach(__name__, submodules)
+</code></pre></div><p>Then, in each submodule&rsquo;s <code>__init__.py</code> (in this case, <code>filters/__init__.py</code>), specify which functions are to be loaded from where:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">from</span> ..util <span style="color:#f92672">import</span> lazy
+
+__getattr__, __dir__, __all__ <span style="color:#f92672">=</span> lazy<span style="color:#f92672">.</span>attach(
+    __name__,
+    submodules<span style="color:#f92672">=</span>[<span style="color:#e6db74">&#39;rank&#39;</span>]
+    submod_attrs<span style="color:#f92672">=</span>{
+        <span style="color:#e6db74">&#39;_gaussian&#39;</span>: [<span style="color:#e6db74">&#39;gaussian&#39;</span>, <span style="color:#e6db74">&#39;difference_of_gaussians&#39;</span>],
+        <span style="color:#e6db74">&#39;edges&#39;</span>: [<span style="color:#e6db74">&#39;sobel&#39;</span>, <span style="color:#e6db74">&#39;sobel_h&#39;</span>, <span style="color:#e6db74">&#39;sobel_v&#39;</span>,
+                  <span style="color:#e6db74">&#39;scharr&#39;</span>, <span style="color:#e6db74">&#39;scharr_h&#39;</span>, <span style="color:#e6db74">&#39;scharr_v&#39;</span>,
+                  <span style="color:#e6db74">&#39;prewitt&#39;</span>, <span style="color:#e6db74">&#39;prewitt_h&#39;</span>, <span style="color:#e6db74">&#39;prewitt_v&#39;</span>,
+                  <span style="color:#e6db74">&#39;roberts&#39;</span>, <span style="color:#e6db74">&#39;roberts_pos_diag&#39;</span>, <span style="color:#e6db74">&#39;roberts_neg_diag&#39;</span>,
+                  <span style="color:#e6db74">&#39;laplace&#39;</span>,
+                  <span style="color:#e6db74">&#39;farid&#39;</span>, <span style="color:#e6db74">&#39;farid_h&#39;</span>, <span style="color:#e6db74">&#39;farid_v&#39;</span>]
+    }
+)
+</code></pre></div><p>The above would be equivalent to:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">from</span> . <span style="color:#f92672">import</span> rank
+<span style="color:#f92672">from</span> ._gaussian <span style="color:#f92672">import</span> gaussian, difference_of_gaussians
+<span style="color:#f92672">from</span> .edges <span style="color:#f92672">import</span> (sobel, sobel_h, sobel_v,
+                    scharr, scharr_h, scharr_v,
+                    prewitt, prewitt_h, prewitt_v,
+                    roberts, roberts_pos_diag, roberts_neg_diag,
+                    laplace,
+                    farid, farid_h, farid_v)
+</code></pre></div><p>The difference being that the submodule is loaded only once it is accessed:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> skimage
+dir(skimage<span style="color:#f92672">.</span>filters)  <span style="color:#75715e"># This works as usual</span>
+</code></pre></div><p>Furthermore, the functions inside of the submodule are loaded only
+once they are needed:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> skimage
+
+skimage<span style="color:#f92672">.</span>filters<span style="color:#f92672">.</span>gaussian(<span style="color:#f92672">...</span>)  <span style="color:#75715e"># Lazy load `gaussian` from</span>
+                               <span style="color:#75715e"># `skimage.filters._gaussian`</span>
+
+skimage<span style="color:#f92672">.</span>filters<span style="color:#f92672">.</span>rank<span style="color:#f92672">.</span>mean_bilateral(<span style="color:#f92672">...</span>)  <span style="color:#75715e"># Loaded once `rank` is accessed</span>
+</code></pre></div><p>One disadvantage is that erroneous or missing imports no longer fail immediately.
+During development and testing, the <code>EAGER_IMPORT</code> environment variable can be set to disable lazy loading, so that errors like these can be spotted.</p>
+<h4 id="external-libraries">External libraries</h4>
+<p>The <code>lazy.attach</code> function is an alternative to setting up package internal imports.
+We also provide <code>lazy.load</code> so that projects can lazily import external libraries:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">linalg <span style="color:#f92672">=</span> lazy<span style="color:#f92672">.</span>load(<span style="color:#e6db74">&#39;scipy.linalg&#39;</span>)  <span style="color:#75715e"># `linalg` will only be loaded when accessed</span>
+</code></pre></div><h1 id="implementation">Implementation</h1>
+<p>Currently, a work-in-progress implementation lives in <a href="https://github.com/scikit-image/scikit-image/pull/5101">this pull request to scikit-image</a>—specifically, inside of <code>lazy.py</code>.</p>
+<p>At this point, there exists a prototype of lazy loading, and we&rsquo;re showing it to the community to uncover design flaws, discover improvements, and solicit suggestions on APIs. The prototype implementation has been adapted for use in <a href="https://github.com/napari/napari/pull/2816">napari</a> and <a href="https://github.com/networkx/networkx/pull/4909">NetworkX</a>.</p>
+<p>Once a lazy import interface is implemented, other interesting options become available.
+For example, instead of specifying sub-submodules and functions the way we do above, one could do this in YAML files:</p>
+<pre><code>$ cat skimage/filters/init.yaml
+
+submodules:
+- rank
+
+functions:
+- _gaussian:
+  - gaussian
+  - difference_of_gaussians
+- edges:
+  - sobel
+  - sobel_h
+  - sobel_v
+  - scharr
+
+...
+</code></pre><p>Ultimately, we hope that lazy importing will become part of Python itself, but the developers have indicated that this is highly unlikely <sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>.
+In the mean time, we now have the necessary mechanisms to implement it ourselves.</p>
+<h2 id="core-project-endorsement">Core Project Endorsement</h2>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<h2 id="ecosystem-adoption">Ecosystem Adoption</h2>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<h1 id="notes">Notes</h1>
+<ul>
+<li>
+<p>The <a href="https://snarky.ca/lazy-importing-in-python-3-7/">lazy loading blog post by Brett Cannon</a> showed the feasibility of the concept, and informed our design.</p>
+</li>
+<li>
+<p>Technical improvements happened around the <a href="https://github.com/scikit-image/scikit-image/pull/5101">scikit-image PR</a></p>
+</li>
+<li>
+<p><a href="https://github.com/Erotemic/mkinit">mkinit</a> is a tool that automates the generation of <code>__init__.py</code> files, and supports this lazy loading mechanism.
+See, e.g., <a href="https://github.com/networkx/networkx/pull/4496">NetworkX PR #4496</a>.</p>
+</li>
+<li>
+<p>The lazy loading discussion was initiated in <a href="https://github.com/networkx/networkx/pull/4401">NetworkX PR #4401</a>.</p>
+</li>
+</ul>
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p>Cannon B., personal communication, 7 January 2021. <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
+
+      </div>
+  </article>
+</main>
+
+
+
+
+
+			</div>
+			
+
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2021 Scientific Python Ecosystem.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="/js/menu.js"></script>
+</body>
+</html>

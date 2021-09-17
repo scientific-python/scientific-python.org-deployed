@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Scientific Python Ecosystem Coordination (SPEC) on Scientific Python Ecosystem</title>
+    <link>https://scientific-python.org/specs/</link>
+    <description>Recent content in Scientific Python Ecosystem Coordination (SPEC) on Scientific Python Ecosystem</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 06 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://scientific-python.org/specs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SPEC 0 — Minimum Supported Versions</title>
+      <link>https://scientific-python.org/specs/spec-0000/</link>
+      <pubDate>Thu, 17 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://scientific-python.org/specs/spec-0000/</guid>
+      <description>Description This SPEC recommends that all projects across the Scientific Python ecosystem adopt a common time-based policy for dropping support of older Python and core package versions.
+All versions refer to feature releases (i.e., Python 3.8.0, NumPy 1.19.0; not Python 3.8.1, NumPy 1.19.2).
+Specifically, we recommend that:
+ Support for a given version of Python be dropped 3 years after its initial release. Support for a given version of other core packages be dropped 2 years after their initial release.</description>
+    </item>
+    
+    <item>
+      <title>SPEC 1 — Lazy Loading for Submodules</title>
+      <link>https://scientific-python.org/specs/spec-0001/</link>
+      <pubDate>Thu, 17 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://scientific-python.org/specs/spec-0001/</guid>
+      <description>Description Early on, most scientific Python packages explicitly imported their submodules. For example, you would be able to do:
+import scipy as sp sp.linalg.eig(...) This was convenient: it had the simplicity of a flat namespace, but with the organization of a nested one. However, there was one drawback: importing submodules, especially large ones, introduced unacceptable slowdowns.
+For a while, SciPy had a lazy loading mechanism called PackageLoader. It was eventually dropped, because it failed frequently and in confusing ways—especially when used with interactive prompts.</description>
+    </item>
+    
+    <item>
+      <title>SPEC Purpose and Process</title>
+      <link>https://scientific-python.org/specs/purpose-and-process/</link>
+      <pubDate>Thu, 17 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://scientific-python.org/specs/purpose-and-process/</guid>
+      <description>Description The SPEC process is designed to identify areas of shared concern between projects in the scientific Python ecosystem and to produce collaboratively written, community adopted guidelines for addressing these. Such guidelines are known as SPECs: Scientific Python Ecosystem Coordination documents.
+Specifically, the purpose of the SPEC process is
+ to help unify the ecosystem for users and developers; to provide guidance to projects on technical issues or processes; to document standard APIs, development tools, and community practices; and to foster ecosystem-wide discussions of common problems and to develop shared solutions.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://scientific-python.org/specs/readme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://scientific-python.org/specs/readme/</guid>
+      <description>SPEC The Scientific Python Ecosystem Coordination (SPEC) mechanism is used to recommend project policies, coding conventions, and standard tooling.
+See https://scientific-python.org/specs/</description>
+    </item>
+    
+  </channel>
+</rss>
