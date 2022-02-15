@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Planning for the Next Decade of Scientific Python on Scientific Python</title>
+    <link>https://scientific-python.org/grants/planning_next_decade/</link>
+    <description>Recent content in Planning for the Next Decade of Scientific Python on Scientific Python</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 21 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://scientific-python.org/grants/planning_next_decade/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Jarrod Millman</title>
+      <link>https://scientific-python.org/grants/planning_next_decade/jarrod_millman/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://scientific-python.org/grants/planning_next_decade/jarrod_millman/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Juanita Gomez</title>
+      <link>https://scientific-python.org/grants/planning_next_decade/juanita_gomez/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://scientific-python.org/grants/planning_next_decade/juanita_gomez/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ross Barnowski</title>
+      <link>https://scientific-python.org/grants/planning_next_decade/ross_barnowski/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://scientific-python.org/grants/planning_next_decade/ross_barnowski/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Stéfan van der Walt</title>
+      <link>https://scientific-python.org/grants/planning_next_decade/stefan_van_der_walt/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://scientific-python.org/grants/planning_next_decade/stefan_van_der_walt/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

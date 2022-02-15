@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Scientific Python Ecosystem Coordination on Scientific Python</title>
+    <link>https://scientific-python.org/specs/</link>
+    <description>Recent content in Scientific Python Ecosystem Coordination on Scientific Python</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 14 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://scientific-python.org/specs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SPEC 3 — Accessibility</title>
+      <link>https://scientific-python.org/specs/spec-0003/</link>
+      <pubDate>Mon, 14 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://scientific-python.org/specs/spec-0003/</guid>
+      <description>Description Accessibility is about making the world accessible to the full range of human experience, which includes disabilities. For example, the physical world can be made more accessible for wheelchair users by having more buildings with ramps. Not only should the physical world be accessible, but the digital world as well.
+More and more people are accessing the world digitally. Access to the internet is a human right.[citation for UN]. With access to the internet, people can access vital information, such as education [citation for various country laws to access education] or their banking information.</description>
+    </item>
+    
+    <item>
+      <title>SPEC 2 — API Dispatch</title>
+      <link>https://scientific-python.org/specs/spec-0002/</link>
+      <pubDate>Thu, 16 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://scientific-python.org/specs/spec-0002/</guid>
+      <description>Description We propose mechanisms for:
+(a) wholesale reimplementations of library functions, and (b) function dispatch based on foreign data structures.
+This would allow groups outside of, say, scipy to (a) provide new functions to replace parts of SciPy, or (b) provide data structures that can pass through SciPy&amp;rsquo;s existing computational pipelines.
+Concretely, (a) is akin to monkey-patching, but with the advantage that libraries can coordinate dispatching and report which backend is being used.</description>
+    </item>
+    
+    <item>
+      <title>SPEC 0 — Minimum Supported Versions</title>
+      <link>https://scientific-python.org/specs/spec-0000/</link>
+      <pubDate>Thu, 17 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://scientific-python.org/specs/spec-0000/</guid>
+      <description>Description This SPEC recommends that all projects across the Scientific Python ecosystem adopt a common time-based policy for dropping support of older Python and core package versions.
+All versions refer to feature releases (i.e., Python 3.8.0, NumPy 1.19.0; not Python 3.8.1, NumPy 1.19.2).
+Specifically, we recommend that:
+ Support for a given version of Python be dropped 3 years after its initial release. Support for a given version of other core packages be dropped 2 years after their initial release.</description>
+    </item>
+    
+    <item>
+      <title>SPEC 1 — Lazy Loading for Submodules</title>
+      <link>https://scientific-python.org/specs/spec-0001/</link>
+      <pubDate>Thu, 17 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://scientific-python.org/specs/spec-0001/</guid>
+      <description>Description Early on, most scientific Python packages explicitly imported their submodules. For example, you would be able to do:
+import scipy as sp sp.linalg.eig(...) This was convenient: it had the simplicity of a flat namespace, but with the organization of a nested one. However, there was one drawback: importing submodules, especially large ones, introduced unacceptable slowdowns.
+For a while, SciPy had a lazy loading mechanism called PackageLoader. It was eventually dropped, because it failed frequently and in confusing ways—especially when used with interactive prompts.</description>
+    </item>
+    
+    <item>
+      <title>SPEC Purpose and Process</title>
+      <link>https://scientific-python.org/specs/purpose-and-process/</link>
+      <pubDate>Thu, 17 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://scientific-python.org/specs/purpose-and-process/</guid>
+      <description>Description The SPEC process is designed to identify areas of shared concern between projects in the scientific Python ecosystem and to produce collaboratively written, community adopted guidelines for addressing these. Such guidelines are known as SPECs: Scientific Python Ecosystem Coordination documents.
+Specifically, the purpose of the SPEC process is
+ to help unify the ecosystem for users and developers; to provide guidance to projects on technical issues or processes; to document standard APIs, development tools, and community practices; and to foster ecosystem-wide discussions of common problems and to develop shared solutions.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://scientific-python.org/specs/readme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://scientific-python.org/specs/readme/</guid>
+      <description>SPEC The Scientific Python Ecosystem Coordination (SPEC) mechanism is used to recommend project policies, coding conventions, and standard tooling.
+See https://scientific-python.org/specs/</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,491 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Scientific Python</title>
+    <link>https://scientific-python.org/</link>
+    <description>Recent content on Scientific Python</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 14 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://scientific-python.org/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SPEC 3 — Accessibility</title>
+      <link>https://scientific-python.org/specs/spec-0003/</link>
+      <pubDate>Mon, 14 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://scientific-python.org/specs/spec-0003/</guid>
+      <description>Description Accessibility is about making the world accessible to the full range of human experience, which includes disabilities. For example, the physical world can be made more accessible for wheelchair users by having more buildings with ramps. Not only should the physical world be accessible, but the digital world as well.
+More and more people are accessing the world digitally. Access to the internet is a human right.[citation for UN]. With access to the internet, people can access vital information, such as education [citation for various country laws to access education] or their banking information.</description>
+    </item>
+    
+    <item>
+      <title>SPEC 2 — API Dispatch</title>
+      <link>https://scientific-python.org/specs/spec-0002/</link>
+      <pubDate>Thu, 16 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://scientific-python.org/specs/spec-0002/</guid>
+      <description>Description We propose mechanisms for:
+(a) wholesale reimplementations of library functions, and (b) function dispatch based on foreign data structures.
+This would allow groups outside of, say, scipy to (a) provide new functions to replace parts of SciPy, or (b) provide data structures that can pass through SciPy&amp;rsquo;s existing computational pipelines.
+Concretely, (a) is akin to monkey-patching, but with the advantage that libraries can coordinate dispatching and report which backend is being used.</description>
+    </item>
+    
+    <item>
+      <title>SPECs announced at SciPy 2021</title>
+      <link>https://scientific-python.org/news/specs-announced-scipy2021/</link>
+      <pubDate>Wed, 21 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://scientific-python.org/news/specs-announced-scipy2021/</guid>
+      <description>Scientific Python Ecosystem Coordination project announcement at SciPy2021.</description>
+    </item>
+    
+    <item>
+      <title>SPEC 0 — Minimum Supported Versions</title>
+      <link>https://scientific-python.org/specs/spec-0000/</link>
+      <pubDate>Thu, 17 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://scientific-python.org/specs/spec-0000/</guid>
+      <description>Description This SPEC recommends that all projects across the Scientific Python ecosystem adopt a common time-based policy for dropping support of older Python and core package versions.
+All versions refer to feature releases (i.e., Python 3.8.0, NumPy 1.19.0; not Python 3.8.1, NumPy 1.19.2).
+Specifically, we recommend that:
+ Support for a given version of Python be dropped 3 years after its initial release. Support for a given version of other core packages be dropped 2 years after their initial release.</description>
+    </item>
+    
+    <item>
+      <title>SPEC 1 — Lazy Loading for Submodules</title>
+      <link>https://scientific-python.org/specs/spec-0001/</link>
+      <pubDate>Thu, 17 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://scientific-python.org/specs/spec-0001/</guid>
+      <description>Description Early on, most scientific Python packages explicitly imported their submodules. For example, you would be able to do:
+import scipy as sp sp.linalg.eig(...) This was convenient: it had the simplicity of a flat namespace, but with the organization of a nested one. However, there was one drawback: importing submodules, especially large ones, introduced unacceptable slowdowns.
+For a while, SciPy had a lazy loading mechanism called PackageLoader. It was eventually dropped, because it failed frequently and in confusing ways—especially when used with interactive prompts.</description>
+    </item>
+    
+    <item>
+      <title>SPEC Purpose and Process</title>
+      <link>https://scientific-python.org/specs/purpose-and-process/</link>
+      <pubDate>Thu, 17 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://scientific-python.org/specs/purpose-and-process/</guid>
+      <description>Description The SPEC process is designed to identify areas of shared concern between projects in the scientific Python ecosystem and to produce collaboratively written, community adopted guidelines for addressing these. Such guidelines are known as SPECs: Scientific Python Ecosystem Coordination documents.
+Specifically, the purpose of the SPEC process is
+ to help unify the ecosystem for users and developers; to provide guidance to projects on technical issues or processes; to document standard APIs, development tools, and community practices; and to foster ecosystem-wide discussions of common problems and to develop shared solutions.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://scientific-python.org/specs/readme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://scientific-python.org/specs/readme/</guid>
+      <description>SPEC The Scientific Python Ecosystem Coordination (SPEC) mechanism is used to recommend project policies, coding conventions, and standard tooling.
+See https://scientific-python.org/specs/</description>
+    </item>
+    
+    <item>
+      <title>Background</title>
+      <link>https://scientific-python.org/ecosystem/ecosystem-introduction/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://scientific-python.org/ecosystem/ecosystem-introduction/</guid>
+      <description>[DRAFT] This video has not been recorded yet.
+The Scientific Python ecosystem is a collection of open-source scientific software packages written in Python. It is a broad and ever-expanding set of algorithms and data structures that grew around NumPy, SciPy, and matplotlib.
+The ecosystem includes a wide variety of tools: some more specialized to specific domains such as biological imaging or astronomy, and others quite general for tasks such as data management and high-performance computing.</description>
+    </item>
+    
+    <item>
+      <title>Brigitta Sipőcz</title>
+      <link>https://scientific-python.org/specs/steering-committee/brigitta_sip%C5%91cz/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://scientific-python.org/specs/steering-committee/brigitta_sip%C5%91cz/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Choosing a project</title>
+      <link>https://scientific-python.org/community/choosing-a-project/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://scientific-python.org/community/choosing-a-project/</guid>
+      <description>[DRAFT] This video has not been recorded yet.
+Contributing to a Scientific Python project A common question from new contributors is: &amp;ldquo;how do I choose which project to contribute to&amp;rdquo;? Some people end up contributing to many different projects, while others tend to focus their effort on a single project. Ultimately, the most important factors in this decision are your own personal goals and interests! The projects in the ecosystem have a lot in common; however, it is important to recognize that each project has it&amp;rsquo;s own community, so there may be differences in the overall goals and decision-making processes for each project.</description>
+    </item>
+    
+    <item>
+      <title>Code of Conduct</title>
+      <link>https://scientific-python.org/code_of_conduct/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://scientific-python.org/code_of_conduct/</guid>
+      <description>This code of conduct applies to all spaces managed by the scientific Python ecosystem project, including all public and private mailing lists, issue trackers, wikis, and any other communication channel used by our community.
+This code of conduct should be honored by everyone who participates in the scientific Python ecosystem community formally or informally, or claims any affiliation with the project, in any project-related activities and especially when representing the project, in any role.</description>
+    </item>
+    
+    <item>
+      <title>Elliott Sales de Andrade</title>
+      <link>https://scientific-python.org/specs/steering-committee/elliott_sales_de_andrade/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://scientific-python.org/specs/steering-committee/elliott_sales_de_andrade/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>First contribution</title>
+      <link>https://scientific-python.org/community/first-contribution/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://scientific-python.org/community/first-contribution/</guid>
+      <description>[DRAFT] This video has not been recorded yet.
+How to make your first contribution to open source? Before you start, make sure you have the following:
+ A GitHub account A terminal or command line An editor or IDE Git installed in your computer Conda installed in your computer  There are some links below the video to help you get these elements ready in case you are missing some.</description>
+    </item>
+    
+    <item>
+      <title>Georgiana Dolocan</title>
+      <link>https://scientific-python.org/specs/steering-committee/georgiana_dolocan/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://scientific-python.org/specs/steering-committee/georgiana_dolocan/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Get Help</title>
+      <link>https://scientific-python.org/gethelp/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://scientific-python.org/gethelp/</guid>
+      <description>Please feel free to ask questions on our community Discourse forum. Contributors must adhere to our code of conduct.</description>
+    </item>
+    
+    <item>
+      <title>Getting started</title>
+      <link>https://scientific-python.org/community/getting-started/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://scientific-python.org/community/getting-started/</guid>
+      <description>[DRAFT] This video has not been recorded yet.
+Choosing a project to work on How should you choose which project to work on? There are many projects in the ecosystem to choose from so it’s important to find one related to something you’re interested in or is a project you already use. For example, if you’re interested in working with images, it might be worth looking into implementing algorithms in scikit-image.</description>
+    </item>
+    
+    <item>
+      <title>Governance and Decision Making</title>
+      <link>https://scientific-python.org/about/governance/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://scientific-python.org/about/governance/</guid>
+      <description>Abstract Scientific Python is a consensus-based community project. Anyone with an interest in the project can join the community, contribute to the project design, and participate in the decision making process. This document describes how that participation takes place, how to find consensus, and how deadlocks are resolved.
+Note that this document only applies to the Scientific Python project, which aims to better coordinate the ecosystem and prepare scientific Python for the next decade of data science.</description>
+    </item>
+    
+    <item>
+      <title>Install</title>
+      <link>https://scientific-python.org/ecosystem/install/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://scientific-python.org/ecosystem/install/</guid>
+      <description>[DRAFT] This video has not been recorded yet.
+Before installing Scientific Python libraries, you need to have Python itself installed. There are two, largely equivalent, ways of doing that, and we describe both below.
+If you have a working version of Python on your system already (check by running python3), you can skip to setting up a virtual environment.
+Segment 1: Python.org This is the official Python distribution, which uses the pip package manager.</description>
+    </item>
+    
+    <item>
+      <title>IPython</title>
+      <link>https://scientific-python.org/specs/core-projects/ipython/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://scientific-python.org/specs/core-projects/ipython/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Jarrod Millman</title>
+      <link>https://scientific-python.org/grants/planning_next_decade/jarrod_millman/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://scientific-python.org/grants/planning_next_decade/jarrod_millman/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Jarrod Millman</title>
+      <link>https://scientific-python.org/specs/steering-committee/jarrod_millman/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://scientific-python.org/specs/steering-committee/jarrod_millman/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Joris Van den Bossche</title>
+      <link>https://scientific-python.org/specs/steering-committee/joris_van_den_bossche/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://scientific-python.org/specs/steering-committee/joris_van_den_bossche/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Juan Nunez-Iglesias</title>
+      <link>https://scientific-python.org/specs/steering-committee/juan_nunez-iglesias/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://scientific-python.org/specs/steering-committee/juan_nunez-iglesias/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Juanita Gomez</title>
+      <link>https://scientific-python.org/grants/planning_next_decade/juanita_gomez/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://scientific-python.org/grants/planning_next_decade/juanita_gomez/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Juanita Gomez</title>
+      <link>https://scientific-python.org/specs/steering-committee/juanita_gomez/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://scientific-python.org/specs/steering-committee/juanita_gomez/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Kira Evans</title>
+      <link>https://scientific-python.org/specs/steering-committee/kira_evans/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://scientific-python.org/specs/steering-committee/kira_evans/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Kristen Thyng</title>
+      <link>https://scientific-python.org/specs/steering-committee/kristen_thyng/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://scientific-python.org/specs/steering-committee/kristen_thyng/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Lucy Liu</title>
+      <link>https://scientific-python.org/specs/steering-committee/lucy_liu/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://scientific-python.org/specs/steering-committee/lucy_liu/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Madicken Munk</title>
+      <link>https://scientific-python.org/specs/steering-committee/madicken_munk/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://scientific-python.org/specs/steering-committee/madicken_munk/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Matplotlib</title>
+      <link>https://scientific-python.org/specs/core-projects/matplotlib/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://scientific-python.org/specs/core-projects/matplotlib/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Matthias Bussonnier</title>
+      <link>https://scientific-python.org/specs/steering-committee/matthias_bussonnier/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://scientific-python.org/specs/steering-committee/matthias_bussonnier/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Melissa Weber Mendonça</title>
+      <link>https://scientific-python.org/grants/inclusive_culture/melissa_weber_mendon%C3%A7a/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://scientific-python.org/grants/inclusive_culture/melissa_weber_mendon%C3%A7a/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Melissa Weber Mendonça</title>
+      <link>https://scientific-python.org/specs/steering-committee/melissa_weber_mendon%C3%A7a/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://scientific-python.org/specs/steering-committee/melissa_weber_mendon%C3%A7a/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>NetworkX</title>
+      <link>https://scientific-python.org/specs/core-projects/networkx/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://scientific-python.org/specs/core-projects/networkx/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Next Steps</title>
+      <link>https://scientific-python.org/ecosystem/next-steps/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://scientific-python.org/ecosystem/next-steps/</guid>
+      <description>[DRAFT] This video has not been recorded yet.
+Scientific Python is built on the Python programming language. Using Scientific Python therefore requires having a firm grasp of Python itself. We suggest reading through the official tutorial, doing an online tutorial on exercism, or using any of the countless resources that exist online or in print.
+Learning a new language can be challenging, but Python is fun&amp;mdash;so keep trying and hang in there!</description>
+    </item>
+    
+    <item>
+      <title>NumPy</title>
+      <link>https://scientific-python.org/specs/core-projects/numpy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://scientific-python.org/specs/core-projects/numpy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>pandas</title>
+      <link>https://scientific-python.org/specs/core-projects/pandas/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://scientific-python.org/specs/core-projects/pandas/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Paul Ivanov</title>
+      <link>https://scientific-python.org/specs/steering-committee/paul_ivanov/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://scientific-python.org/specs/steering-committee/paul_ivanov/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Press kit</title>
+      <link>https://scientific-python.org/press-kit/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://scientific-python.org/press-kit/</guid>
+      <description>We would like to make it easy for you to include the Scientific Python project identity in your next academic paper, course materials, or presentation.
+You will find SVG versions of the Scientific Python logo here. Note that by using the scientific-python.org resources, you accept the Scientific Python Code of Conduct.</description>
+    </item>
+    
+    <item>
+      <title>Ralf Gommers</title>
+      <link>https://scientific-python.org/specs/steering-committee/ralf_gommers/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://scientific-python.org/specs/steering-committee/ralf_gommers/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Roadmap</title>
+      <link>https://scientific-python.org/roadmap/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://scientific-python.org/roadmap/</guid>
+      <description>With an extensive and high-quality ecosystem of libraries, scientific Python has emerged as the leading platform for data analysis. This ecosystem is sustained by independent volunteers with separate mailing lists, websites, roadmaps, documentation, engineering and packaging solutions, and governance structures.
+The Scientific Python project aims to better coordinate the ecosystem and prepare scientific Python for the next decade of data science. We provide resources, planning, and coordination for the community.</description>
+    </item>
+    
+    <item>
+      <title>Ross Barnowski</title>
+      <link>https://scientific-python.org/grants/planning_next_decade/ross_barnowski/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://scientific-python.org/grants/planning_next_decade/ross_barnowski/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ross Barnowski</title>
+      <link>https://scientific-python.org/specs/steering-committee/ross_barnowski/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://scientific-python.org/specs/steering-committee/ross_barnowski/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>scikit-image</title>
+      <link>https://scientific-python.org/specs/core-projects/scikit-image/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://scientific-python.org/specs/core-projects/scikit-image/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>scikit-learn</title>
+      <link>https://scientific-python.org/specs/core-projects/scikit-learn/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://scientific-python.org/specs/core-projects/scikit-learn/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SciPy</title>
+      <link>https://scientific-python.org/specs/core-projects/scipy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://scientific-python.org/specs/core-projects/scipy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Stéfan van der Walt</title>
+      <link>https://scientific-python.org/grants/planning_next_decade/stefan_van_der_walt/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://scientific-python.org/grants/planning_next_decade/stefan_van_der_walt/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Stéfan van der Walt</title>
+      <link>https://scientific-python.org/specs/steering-committee/st%C3%A9fan_van_der_walt/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://scientific-python.org/specs/steering-committee/st%C3%A9fan_van_der_walt/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ways to contribute</title>
+      <link>https://scientific-python.org/community/ways-to-contribute/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://scientific-python.org/community/ways-to-contribute/</guid>
+      <description>[DRAFT] This video has not been recorded yet.
+5 ways to contribute to Scientific Python without coding Scientific Python is code designed by scientists and engineers for science and engineering. All projects have a straightforward license that determines what you can and cannot do; typically, you may use and modify the software, as long as you give credit to the original authors. The entire ecosystem relies on peer review and community production, so your contribution is really important.</description>
+    </item>
+    
+    <item>
+      <title>Why contribute</title>
+      <link>https://scientific-python.org/community/why-contribute/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://scientific-python.org/community/why-contribute/</guid>
+      <description>[DRAFT] This video has not been recorded yet.
+Your time is the most valuable thing you have, so when taking part in volunteer activities it is always worth asking &amp;ldquo;why?&amp;rdquo;. Here are a few reasons:
+Advance science First, Scientific Python is about science. And if you believe that science makes the world better, then improving scientific tooling is extremely important! By putting better open source tools in the hands of researchers, we can help them to produce accurate results, do so in a transparent way, while also improving reproducibility.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>SPEC Steering Committee on Scientific Python</title>
+    <link>https://scientific-python.org/specs/steering-committee/</link>
+    <description>Recent content in SPEC Steering Committee on Scientific Python</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 06 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://scientific-python.org/specs/steering-committee/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Brigitta Sipőcz</title>
+      <link>https://scientific-python.org/specs/steering-committee/brigitta_sip%C5%91cz/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://scientific-python.org/specs/steering-committee/brigitta_sip%C5%91cz/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Elliott Sales de Andrade</title>
+      <link>https://scientific-python.org/specs/steering-committee/elliott_sales_de_andrade/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://scientific-python.org/specs/steering-committee/elliott_sales_de_andrade/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Georgiana Dolocan</title>
+      <link>https://scientific-python.org/specs/steering-committee/georgiana_dolocan/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://scientific-python.org/specs/steering-committee/georgiana_dolocan/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Jarrod Millman</title>
+      <link>https://scientific-python.org/specs/steering-committee/jarrod_millman/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://scientific-python.org/specs/steering-committee/jarrod_millman/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Joris Van den Bossche</title>
+      <link>https://scientific-python.org/specs/steering-committee/joris_van_den_bossche/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://scientific-python.org/specs/steering-committee/joris_van_den_bossche/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Juan Nunez-Iglesias</title>
+      <link>https://scientific-python.org/specs/steering-committee/juan_nunez-iglesias/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://scientific-python.org/specs/steering-committee/juan_nunez-iglesias/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Juanita Gomez</title>
+      <link>https://scientific-python.org/specs/steering-committee/juanita_gomez/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://scientific-python.org/specs/steering-committee/juanita_gomez/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Kira Evans</title>
+      <link>https://scientific-python.org/specs/steering-committee/kira_evans/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://scientific-python.org/specs/steering-committee/kira_evans/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Kristen Thyng</title>
+      <link>https://scientific-python.org/specs/steering-committee/kristen_thyng/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://scientific-python.org/specs/steering-committee/kristen_thyng/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Lucy Liu</title>
+      <link>https://scientific-python.org/specs/steering-committee/lucy_liu/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://scientific-python.org/specs/steering-committee/lucy_liu/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Madicken Munk</title>
+      <link>https://scientific-python.org/specs/steering-committee/madicken_munk/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://scientific-python.org/specs/steering-committee/madicken_munk/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Matthias Bussonnier</title>
+      <link>https://scientific-python.org/specs/steering-committee/matthias_bussonnier/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://scientific-python.org/specs/steering-committee/matthias_bussonnier/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Melissa Weber Mendonça</title>
+      <link>https://scientific-python.org/specs/steering-committee/melissa_weber_mendon%C3%A7a/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://scientific-python.org/specs/steering-committee/melissa_weber_mendon%C3%A7a/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Paul Ivanov</title>
+      <link>https://scientific-python.org/specs/steering-committee/paul_ivanov/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://scientific-python.org/specs/steering-committee/paul_ivanov/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ralf Gommers</title>
+      <link>https://scientific-python.org/specs/steering-committee/ralf_gommers/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://scientific-python.org/specs/steering-committee/ralf_gommers/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ross Barnowski</title>
+      <link>https://scientific-python.org/specs/steering-committee/ross_barnowski/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://scientific-python.org/specs/steering-committee/ross_barnowski/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Stéfan van der Walt</title>
+      <link>https://scientific-python.org/specs/steering-committee/st%C3%A9fan_van_der_walt/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://scientific-python.org/specs/steering-committee/st%C3%A9fan_van_der_walt/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

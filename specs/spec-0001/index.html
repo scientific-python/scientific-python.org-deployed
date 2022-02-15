@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta name="description" content="Community developed and owned ecosystem for scientific computing" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>Scientific Python</title>
+
+    
+    
+
+
+
+
+<link href="https://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet">
+
+
+<link rel="stylesheet" type="text/css" href="../../css/fresh/core.min.8824700ca67de8e3d9af90697cb5fc1586be1208834efb62581349c1e8900df2.css" integrity="sha256-iCRwDKZ96OPZr5BpfLX8FYa&#43;EgiDTvtiWBNJweiQDfI=">
+
+
+<link rel="icon" href="../../images/favicon.ico" />
+
+<link rel="stylesheet" href="../../css/scientific-python-hugo-theme/bulma.css">
+<link rel="stylesheet" href="../../css/scientific-python-hugo-theme/vars.css">
+<link rel="stylesheet" href="../../css/scientific-python-hugo-theme/styles.css">
+<link rel="stylesheet" href="../../css/scientific-python-hugo-theme/content.css">
+<link rel="stylesheet" href="../../css/scientific-python-hugo-theme/news.css">
+<link rel="stylesheet" href="../../css/scientific-python-hugo-theme/keyfeatures.css">
+<link rel="stylesheet" href="../../css/scientific-python-hugo-theme/tables.css">
+<link rel="stylesheet" href="../../css/scientific-python-hugo-theme/videos.css">
+<link rel="stylesheet" href="../../css/scientific-python-hugo-theme/posts.css">
+<link rel="stylesheet" href="../../css/scientific-python-hugo-theme/teams.css">
+<link rel="stylesheet" href="../../css/scientific-python-hugo-theme/code-highlight.css">
+<link rel="stylesheet" href="../../css/scientific-python-hugo-theme/shortcuts.css">
+
+
+
+<link rel="stylesheet" href="../../css/user/custom.min.2d740a39b0c7b68afd33331c206baa5533fbac2c3766fb33638d42e9d741f1e2.css" integrity="sha256-LXQKObDHtor9MzMcIGuqVTP7rCw3ZvszY41C6ddB8eI=">
+
+
+
+
+    
+    
+
+    
+    
+  </head>
+  <body>
+    
+    
+
+    
+    
+<nav id="nav" class="navbar is-fresh is-transparent no-shadow" role="navigation" aria-label="main navigation">
+  <div class="container is-max-widescreen">
+    <div class="navbar-brand">
+      
+      <a id="navbar-item" class="navbar-item" href="../../">
+        <img id="navbar-logo" src="../../images/logo.svg" alt="A green tree on a white hill at the end of a green path in the shape of the letter &#39;S&#39;.">
+        <div id="navbar-logo-text">Scientific Python</div>
+      </a>
+      
+
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbar-menu">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div id="navbar-menu" class="navbar-menu is-static">
+
+      <div class="navbar-end">
+        <a href="../../ecosystem/" id="navbar-item" class="navbar-item is-secondary">
+          Ecosystem
+        </a>
+        <a href="../../community/" id="navbar-item" class="navbar-item is-secondary">
+          Community
+        </a>
+        <a href="https://discuss.scientific-python.org" id="navbar-item" class="navbar-item is-secondary">
+          Forum
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+    
+<nav id="navbar-clone" class="navbar is-fresh is-transparent" role="navigation" aria-label="main navigation">
+  <div class="container is-max-widescreen">
+    <div class="navbar-brand">
+      <a id="navbar-item" class="navbar-item" href="../../">
+        <img id="navbar-logo" src="../../images/logo.svg" alt="A green tree on a white hill at the end of a green path in the shape of the letter &#39;S&#39;.">
+        <div id="navbar-logo-text">Scientific Python</div>
+      </a>
+
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="cloned-navbar-menu">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div id="cloned-navbar-menu" class="navbar-menu is-fixed">
+
+      <div class="navbar-end">
+        <a href="../../ecosystem/" id="navbar-item" class="navbar-item is-secondary">
+          Ecosystem
+        </a>
+        <a href="../../community/" id="navbar-item" class="navbar-item is-secondary">
+          Community
+        </a>
+        <a href="https://discuss.scientific-python.org" id="navbar-item" class="navbar-item is-secondary">
+          Forum
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+    
+
+    
+<section class="content-padding flex-row">
+    <div class="shortcuts-container">
+        <div class="shortcuts-title"><img src="../../images/icons/mui-icons_format-list-bulleted.svg"/>On this page</div>
+        <div id="shortcuts"></div>
+    </div>
+    <div class="content-container">
+        <div class="columns">
+            <div class="column is-centered-tablet-portrait">
+                <h1 class="title section-title">SPEC 1 — Lazy Loading for Submodules</h1>
+                <h5 class="subtitle is-5 is-muted"></h5>
+                <div class="divider"></div>
+            </div>
+        </div>
+        <div class="post_meta">
+
+<div class="spec-meta">
+  <table>
+    
+      
+        
+      
+        <tr class="field">
+          <td class="field-name">
+            Authors:
+          </td>
+            <td class="field-value">
+              
+                Stéfan van der Walt &lt;stefanv@berkeley.edu&gt;,
+            
+              
+                Jon Crall &lt;jon.crall@kitware.com&gt;,
+            
+              
+                Dan Schult &lt;dschult@colgate.edu&gt;
+            
+            </td></tr>
+      
+      
+      
+        <tr class="field">
+          <td class="field-name">
+            Discussion:
+          </td>
+            <td class="field-value">
+              <a href="https://discuss.scientific-python.org/t/spec-1-lazy-loading-for-submodules/25">https://discuss.scientific-python.org/t/spec-1-lazy-loading-for-submodules/25</a>
+            </td></tr>
+      
+      
+        
+        
+        
+      
+        <tr class="field">
+          <td class="field-name">
+            History:
+          </td>
+            <td class="field-value">
+              <!-- raw HTML omitted --><a href="https://github.com/scientific-python/specs/commits/main/spec-0001/index.md">https://github.com/scientific-python/specs/commits/main/spec-0001/index.md</a><!-- raw HTML omitted -->
+            </td></tr>
+      
+      
+      
+        <tr class="field">
+          <td class="field-name">
+            Endorsed by:
+          </td>
+            <td class="field-value">
+              
+            </td></tr>
+      
+          
+          <tr class="field">
+              <td class="field-name">&nbsp;</td>
+              <td class="field-value"></td>
+          </tr>
+          
+          <tr class="field" style="background-color:crimson;color:white;">
+            <td class="field-name">
+              &nbsp; WARNING:
+            </td>
+            <td class="field-value">
+              Draft document.
+            </td>
+          </div></table>
+</div>
+
+</div>
+
+        <div class="post_content">
+          <h2 id="description">Description</h2>
+<p>Early on, most scientific Python packages explicitly imported their submodules.
+For example, you would be able to do:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">scipy</span> <span class="k">as</span> <span class="nn">sp</span>
+
+<span class="n">sp</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">eig</span><span class="p">(</span><span class="o">...</span><span class="p">)</span>
+</code></pre></div><p>This was convenient: it had the simplicity of a flat namespace, but with the organization of a nested one.
+However, there was one drawback: importing submodules, especially large ones, introduced unacceptable slowdowns.</p>
+<p>For a while, SciPy had a lazy loading mechanism called <code>PackageLoader</code>.
+It was eventually dropped, because it failed frequently and in confusing ways—especially when used with interactive prompts.</p>
+<p>Thereafter, most libraries stopped importing submodules and relied on documentation to tell users which submodules to import.</p>
+<p>Commonly, code now reads:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="kn">from</span> <span class="nn">scipy</span> <span class="kn">import</span> <span class="n">linalg</span>
+<span class="n">linalg</span><span class="o">.</span><span class="n">eig</span><span class="p">(</span><span class="o">...</span><span class="p">)</span>
+</code></pre></div><p>Since the <code>linalg</code> submodule often conflicts with similar instances in other libraries, users also write:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="c1"># Invent an arbitrary name for each submodule</span>
+<span class="kn">import</span> <span class="nn">scipy.linalg</span> <span class="k">as</span> <span class="nn">sla</span>
+<span class="n">sla</span><span class="o">.</span><span class="n">eig</span><span class="p">(</span><span class="o">...</span><span class="p">)</span>
+</code></pre></div><p>or</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="c1"># Import individual functions, making it harder to know where they are from</span>
+<span class="c1"># later on in code.</span>
+<span class="kn">from</span> <span class="nn">scipy.linalg</span> <span class="kn">import</span> <span class="n">eig</span>
+<span class="n">eig</span><span class="p">(</span><span class="o">...</span><span class="p">)</span>
+</code></pre></div><p>This SPEC proposes a lazy loading mechanism—targeted at libraries—that avoids import slowdowns and brings back explicit submodule exports, but without slowing down imports.</p>
+<p>For example, it allows the following behavior:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">skimage</span> <span class="k">as</span> <span class="nn">ski</span>  <span class="c1"># cheap operation; does not load submodules</span>
+
+<span class="n">ski</span><span class="o">.</span><span class="n">filters</span>  <span class="c1"># cheap operation; loads the filters submodule, but not</span>
+             <span class="c1"># any of its submodules or functions</span>
+
+<span class="n">ski</span><span class="o">.</span><span class="n">filters</span><span class="o">.</span><span class="n">gaussian</span><span class="p">(</span><span class="o">...</span><span class="p">)</span>  <span class="c1"># loads the file in which gaussian is implemented</span>
+                           <span class="c1"># and calls that function</span>
+
+</code></pre></div><p>This has several advantages:</p>
+<ol>
+<li>
+<p>It exposes a <strong>nested namespace that behaves as a flat namespace</strong>.
+This avoids carefully having to import exactly the right combination of submodules, and allows interactive exploration of the namespace in an interactive terminal.</p>
+</li>
+<li>
+<p>It <strong>avoids having to optimize for import cost</strong>.
+Currently, developers often move imports inside of functions to avoid slowing down importing their module.
+Lazy importing makes imports at any depth in the hierarchy cheap.</p>
+</li>
+<li>
+<p>It provides <strong>direct access to submodules</strong>, avoiding local namespace conflicts.
+Instead of doing <code>import scipy.linalg as sla</code> to avoid clobbering a local <code>linalg</code>, one can now assign a short name to each library and access its members directly: <code>import scipy as sp; sp.linalg</code>.</p>
+</li>
+</ol>
+<h3 id="usage">Usage</h3>
+<p>Python 3.7, with <a href="https://www.python.org/dev/peps/pep-0562/">PEP 562</a>, introduces the ability to override module <code>__getattr__</code> and <code>__dir__</code>.
+In combination, these features make it possible to again provide access to submodules, but without incurring performance penalties.</p>
+<p>We propose a utility library for easily setting up so-called &ldquo;lazy imports&rdquo; so that submodules are only loaded upon accessing them.</p>
+<p>As an example, we will show how to set up lazy importing for <code>skimage.filters</code>.
+In the library&rsquo;s main <code>__init__.py</code>, specify which submodules are lazily loaded:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="n">submodules</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="o">...</span>
+    <span class="s1">&#39;filters&#39;</span><span class="p">,</span>
+    <span class="o">...</span>
+<span class="p">]</span>
+
+<span class="kn">from</span> <span class="nn">.util</span> <span class="kn">import</span> <span class="n">lazy</span>
+<span class="fm">__getattr__</span><span class="p">,</span> <span class="fm">__dir__</span><span class="p">,</span> <span class="n">_</span> <span class="o">=</span> <span class="n">lazy</span><span class="o">.</span><span class="n">attach</span><span class="p">(</span><span class="vm">__name__</span><span class="p">,</span> <span class="n">submodules</span><span class="p">)</span>
+</code></pre></div><p>Then, in each submodule&rsquo;s <code>__init__.py</code> (in this case, <code>filters/__init__.py</code>), specify which functions are to be loaded from where:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="kn">from</span> <span class="nn">..util</span> <span class="kn">import</span> <span class="n">lazy</span>
+
+<span class="fm">__getattr__</span><span class="p">,</span> <span class="fm">__dir__</span><span class="p">,</span> <span class="n">__all__</span> <span class="o">=</span> <span class="n">lazy</span><span class="o">.</span><span class="n">attach</span><span class="p">(</span>
+    <span class="vm">__name__</span><span class="p">,</span>
+    <span class="n">submodules</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;rank&#39;</span><span class="p">]</span>
+    <span class="n">submod_attrs</span><span class="o">=</span><span class="p">{</span>
+        <span class="s1">&#39;_gaussian&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;gaussian&#39;</span><span class="p">,</span> <span class="s1">&#39;difference_of_gaussians&#39;</span><span class="p">],</span>
+        <span class="s1">&#39;edges&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;sobel&#39;</span><span class="p">,</span> <span class="s1">&#39;sobel_h&#39;</span><span class="p">,</span> <span class="s1">&#39;sobel_v&#39;</span><span class="p">,</span>
+                  <span class="s1">&#39;scharr&#39;</span><span class="p">,</span> <span class="s1">&#39;scharr_h&#39;</span><span class="p">,</span> <span class="s1">&#39;scharr_v&#39;</span><span class="p">,</span>
+                  <span class="s1">&#39;prewitt&#39;</span><span class="p">,</span> <span class="s1">&#39;prewitt_h&#39;</span><span class="p">,</span> <span class="s1">&#39;prewitt_v&#39;</span><span class="p">,</span>
+                  <span class="s1">&#39;roberts&#39;</span><span class="p">,</span> <span class="s1">&#39;roberts_pos_diag&#39;</span><span class="p">,</span> <span class="s1">&#39;roberts_neg_diag&#39;</span><span class="p">,</span>
+                  <span class="s1">&#39;laplace&#39;</span><span class="p">,</span>
+                  <span class="s1">&#39;farid&#39;</span><span class="p">,</span> <span class="s1">&#39;farid_h&#39;</span><span class="p">,</span> <span class="s1">&#39;farid_v&#39;</span><span class="p">]</span>
+    <span class="p">}</span>
+<span class="p">)</span>
+</code></pre></div><p>The above would be equivalent to:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="kn">from</span> <span class="nn">.</span> <span class="kn">import</span> <span class="n">rank</span>
+<span class="kn">from</span> <span class="nn">._gaussian</span> <span class="kn">import</span> <span class="n">gaussian</span><span class="p">,</span> <span class="n">difference_of_gaussians</span>
+<span class="kn">from</span> <span class="nn">.edges</span> <span class="kn">import</span> <span class="p">(</span><span class="n">sobel</span><span class="p">,</span> <span class="n">sobel_h</span><span class="p">,</span> <span class="n">sobel_v</span><span class="p">,</span>
+                    <span class="n">scharr</span><span class="p">,</span> <span class="n">scharr_h</span><span class="p">,</span> <span class="n">scharr_v</span><span class="p">,</span>
+                    <span class="n">prewitt</span><span class="p">,</span> <span class="n">prewitt_h</span><span class="p">,</span> <span class="n">prewitt_v</span><span class="p">,</span>
+                    <span class="n">roberts</span><span class="p">,</span> <span class="n">roberts_pos_diag</span><span class="p">,</span> <span class="n">roberts_neg_diag</span><span class="p">,</span>
+                    <span class="n">laplace</span><span class="p">,</span>
+                    <span class="n">farid</span><span class="p">,</span> <span class="n">farid_h</span><span class="p">,</span> <span class="n">farid_v</span><span class="p">)</span>
+</code></pre></div><p>The difference being that the submodule is loaded only once it is accessed:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">skimage</span>
+<span class="nb">dir</span><span class="p">(</span><span class="n">skimage</span><span class="o">.</span><span class="n">filters</span><span class="p">)</span>  <span class="c1"># This works as usual</span>
+</code></pre></div><p>Furthermore, the functions inside of the submodule are loaded only
+once they are needed:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">skimage</span>
+
+<span class="n">skimage</span><span class="o">.</span><span class="n">filters</span><span class="o">.</span><span class="n">gaussian</span><span class="p">(</span><span class="o">...</span><span class="p">)</span>  <span class="c1"># Lazy load `gaussian` from</span>
+                               <span class="c1"># `skimage.filters._gaussian`</span>
+
+<span class="n">skimage</span><span class="o">.</span><span class="n">filters</span><span class="o">.</span><span class="n">rank</span><span class="o">.</span><span class="n">mean_bilateral</span><span class="p">(</span><span class="o">...</span><span class="p">)</span>  <span class="c1"># Loaded once `rank` is accessed</span>
+</code></pre></div><p>One disadvantage is that erroneous or missing imports no longer fail immediately.
+During development and testing, the <code>EAGER_IMPORT</code> environment variable can be set to disable lazy loading, so that errors like these can be spotted.</p>
+<h4 id="external-libraries">External libraries</h4>
+<p>The <code>lazy.attach</code> function is an alternative to setting up package internal imports.
+We also provide <code>lazy.load</code> so that projects can lazily import external libraries:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="n">linalg</span> <span class="o">=</span> <span class="n">lazy</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="s1">&#39;scipy.linalg&#39;</span><span class="p">)</span>  <span class="c1"># `linalg` will only be loaded when accessed</span>
+</code></pre></div><h2 id="implementation">Implementation</h2>
+<p>Currently, a work-in-progress implementation lives in <a href="https://github.com/scikit-image/scikit-image/pull/5101">this pull request to scikit-image</a>—specifically, inside of <code>lazy.py</code>.</p>
+<p>At this point, there exists a prototype of lazy loading, and we&rsquo;re showing it to the community to uncover design flaws, discover improvements, and solicit suggestions on APIs. The prototype implementation has been adapted for use in <a href="https://github.com/napari/napari/pull/2816">napari</a> and <a href="https://github.com/networkx/networkx/pull/4909">NetworkX</a>.</p>
+<p>Once a lazy import interface is implemented, other interesting options become available.
+For example, instead of specifying sub-submodules and functions the way we do above, one could do this in YAML files:</p>
+<pre tabindex="0"><code>$ cat skimage/filters/init.yaml
+
+submodules:
+- rank
+
+functions:
+- _gaussian:
+  - gaussian
+  - difference_of_gaussians
+- edges:
+  - sobel
+  - sobel_h
+  - sobel_v
+  - scharr
+
+...
+</code></pre><p>Ultimately, we hope that lazy importing will become part of Python itself, but the developers have indicated that this is highly unlikely <sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>.
+In the mean time, we now have the necessary mechanisms to implement it ourselves.</p>
+<h3 id="core-project-endorsement">Core Project Endorsement</h3>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<h3 id="ecosystem-adoption">Ecosystem Adoption</h3>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<h2 id="notes">Notes</h2>
+<ul>
+<li>
+<p>The <a href="https://snarky.ca/lazy-importing-in-python-3-7/">lazy loading blog post by Brett Cannon</a> showed the feasibility of the concept, and informed our design.</p>
+</li>
+<li>
+<p>Technical improvements happened around the <a href="https://github.com/scikit-image/scikit-image/pull/5101">scikit-image PR</a></p>
+</li>
+<li>
+<p><a href="https://github.com/Erotemic/mkinit">mkinit</a> is a tool that automates the generation of <code>__init__.py</code> files, and supports this lazy loading mechanism.
+See, e.g., <a href="https://github.com/networkx/networkx/pull/4496">NetworkX PR #4496</a>.</p>
+</li>
+<li>
+<p>The lazy loading discussion was initiated in <a href="https://github.com/networkx/networkx/pull/4401">NetworkX PR #4401</a>.</p>
+</li>
+</ul>
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p>Cannon B., personal communication, 7 January 2021.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
+
+        </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+    
+    <div id="backtotop"><a href="#" id="backtotop-color"></a></div>
+
+    
+    
+
+<footer id="footer" class="footer">
+  <div class="container is-max-widescreen">
+    <div id="footer-columns" class="columns">
+      <div class="footer-logo-column">
+        <img id="footer-logo" src="../../images/logo.svg" alt="Scientific Python logo. A green tree on a white hill at the end of a green path in the shape of the letter &#39;S&#39;.">
+      </div>
+        <div class="link-column">
+          <div class="footer-column">
+            <div class="footer-header">
+            </div>
+            <ul class="link-list">
+              <li class="link-list">
+                <a class="footer-link" href="../../about/">
+                  About
+                </a>
+              </li>
+              <li class="link-list">
+                <a class="footer-link" href="../../roadmap/">
+                  Roadmap
+                </a>
+              </li>
+              <li class="link-list">
+                <a class="footer-link" href="../../code_of_conduct/">
+                  Code of Conduct
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="link-column">
+          <div class="footer-column">
+            <div class="footer-header">
+            </div>
+            <ul class="link-list">
+              <li class="link-list">
+                <a class="footer-link" href="../../specs/">
+                  SPECs
+                </a>
+              </li>
+              <li class="link-list">
+                <a class="footer-link" href="../../grants/">
+                  Grants
+                </a>
+              </li>
+              <li class="link-list">
+                <a class="footer-link" href="../../calendars">
+                  Calendars
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="link-column">
+          <div class="footer-column">
+            <div class="footer-header">
+            </div>
+            <ul class="link-list">
+              <li class="link-list">
+                <a class="footer-link" href="../../press-kit">
+                  Press kit
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-actions">
+          
+
+          <nav class="level is-mobile">
+            <div class="social-media-icons">
+              <a class="level-item" href="https://github.com/scientific-python/" aria-label="https://github.com/scientific-python/">
+                <span class="icon"><i class="fab fa-github"></i></span>
+              </a>
+              <a class="level-item" href="https://www.youtube.com/channel/UC2wKi87Wmy9C1OQMyD9fGxA" aria-label="https://www.youtube.com/channel/UC2wKi87Wmy9C1OQMyD9fGxA">
+                <span class="icon"><i class="fab fa-youtube"></i></span>
+              </a>
+              <a class="level-item" href="https://twitter.com/scientific_py" aria-label="https://twitter.com/scientific_py">
+                <span class="icon"><i class="fab fa-twitter"></i></span>
+              </a>
+              <a class="level-item" href="https://facebook.com/scientific.python" aria-label="https://facebook.com/scientific.python">
+                <span class="icon"><i class="fab fa-facebook"></i></span>
+              </a>
+              <a class="level-item" href="https://www.instagram.com/scientific.python/" aria-label="https://www.instagram.com/scientific.python/">
+                <span class="icon"><i class="fab fa-instagram"></i></span>
+              </a>
+              <a class="level-item" href="https://www.tiktok.com/@scientific.python" aria-label="https://www.tiktok.com/@scientific.python">
+                <span class="icon"><i class="fab fa-tiktok"></i></span>
+              </a>
+            </div>
+          </nav>
+          <div class="copyright">&copy; 2021 Scientific Python. All rights reserved.</div>
+        </div>
+    </div>
+  </div>
+</footer>
+
+    
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="../../js/fresh.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.7.6/dist/js/uikit.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.7.6/dist/css/uikit.min.css" />
+
+<script src="../../js/shortcuts.js"></script>
+<script type="text/javascript">setupShortcuts(maxLevel= 2 );</script>
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" src="../../js/youtube_page.js"></script>
+
+
+
+
+
+
+
+
+
+
+    
+<script defer data-domain="scientific-python.org" src="https://views.scientific-python.org/js/script.js"></script>
+
+
+  </body>
+</html>

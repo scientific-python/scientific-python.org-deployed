@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:ics.py 0.8.0-dev - http://git.io/lLljaA
+BEGIN:VEVENT
+DTSTART:20220202T120000Z
+DTEND:20220202T130000Z
+SUMMARY:SciPy Community Call (Europe/Asia)
+UID:7f45bae4-1849-4781-8bbd-f624b30e24d2@7f45.org
+DESCRIPTION:This is the Europe/Asia-friendly meeting.\n\nMeeting notes: 
+ https://hackmd.io/pyhudrC5TgSwdJtpPldHgQ
+URL:https://us06web.zoom.us/j/6345425936
+DTSTAMP:20220215T065103Z
+RRULE:FREQ=DAILY;INTERVAL=28;UNTIL=20250101T000000
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20220216T200000Z
+DTEND:20220216T210000Z
+SUMMARY:SciPy Community Call (Americas)
+UID:b83fa70d-b312-4f33-9077-d87919fbd9ff@b83f.org
+DESCRIPTION:This is the Americas-friendly meeting.\n\nMeeting notes: 
+ https://hackmd.io/pyhudrC5TgSwdJtpPldHgQ
+URL:https://us06web.zoom.us/j/6345425936
+DTSTAMP:20220215T065103Z
+RRULE:FREQ=DAILY;INTERVAL=28;UNTIL=20250101T000000
+END:VEVENT
+NAME:SciPy Community Calendar
+END:VCALENDAR

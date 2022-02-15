@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta name="description" content="Community developed and owned ecosystem for scientific computing" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>Scientific Python</title>
+
+    
+    
+
+
+
+
+<link href="https://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet">
+
+
+<link rel="stylesheet" type="text/css" href="../../css/fresh/core.min.8824700ca67de8e3d9af90697cb5fc1586be1208834efb62581349c1e8900df2.css" integrity="sha256-iCRwDKZ96OPZr5BpfLX8FYa&#43;EgiDTvtiWBNJweiQDfI=">
+
+
+<link rel="icon" href="../../images/favicon.ico" />
+
+<link rel="stylesheet" href="../../css/scientific-python-hugo-theme/bulma.css">
+<link rel="stylesheet" href="../../css/scientific-python-hugo-theme/vars.css">
+<link rel="stylesheet" href="../../css/scientific-python-hugo-theme/styles.css">
+<link rel="stylesheet" href="../../css/scientific-python-hugo-theme/content.css">
+<link rel="stylesheet" href="../../css/scientific-python-hugo-theme/news.css">
+<link rel="stylesheet" href="../../css/scientific-python-hugo-theme/keyfeatures.css">
+<link rel="stylesheet" href="../../css/scientific-python-hugo-theme/tables.css">
+<link rel="stylesheet" href="../../css/scientific-python-hugo-theme/videos.css">
+<link rel="stylesheet" href="../../css/scientific-python-hugo-theme/posts.css">
+<link rel="stylesheet" href="../../css/scientific-python-hugo-theme/teams.css">
+<link rel="stylesheet" href="../../css/scientific-python-hugo-theme/code-highlight.css">
+<link rel="stylesheet" href="../../css/scientific-python-hugo-theme/shortcuts.css">
+
+
+
+<link rel="stylesheet" href="../../css/user/custom.min.2d740a39b0c7b68afd33331c206baa5533fbac2c3766fb33638d42e9d741f1e2.css" integrity="sha256-LXQKObDHtor9MzMcIGuqVTP7rCw3ZvszY41C6ddB8eI=">
+
+
+
+
+    
+    
+
+    
+    
+  </head>
+  <body>
+    
+    
+
+    
+    
+<nav id="nav" class="navbar is-fresh is-transparent no-shadow" role="navigation" aria-label="main navigation">
+  <div class="container is-max-widescreen">
+    <div class="navbar-brand">
+      
+      <a id="navbar-item" class="navbar-item" href="../../">
+        <img id="navbar-logo" src="../../images/logo.svg" alt="A green tree on a white hill at the end of a green path in the shape of the letter &#39;S&#39;.">
+        <div id="navbar-logo-text">Scientific Python</div>
+      </a>
+      
+
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbar-menu">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div id="navbar-menu" class="navbar-menu is-static">
+
+      <div class="navbar-end">
+        <a href="../../ecosystem/" id="navbar-item" class="navbar-item is-secondary">
+          Ecosystem
+        </a>
+        <a href="../../community/" id="navbar-item" class="navbar-item is-secondary">
+          Community
+        </a>
+        <a href="https://discuss.scientific-python.org" id="navbar-item" class="navbar-item is-secondary">
+          Forum
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+    
+<nav id="navbar-clone" class="navbar is-fresh is-transparent" role="navigation" aria-label="main navigation">
+  <div class="container is-max-widescreen">
+    <div class="navbar-brand">
+      <a id="navbar-item" class="navbar-item" href="../../">
+        <img id="navbar-logo" src="../../images/logo.svg" alt="A green tree on a white hill at the end of a green path in the shape of the letter &#39;S&#39;.">
+        <div id="navbar-logo-text">Scientific Python</div>
+      </a>
+
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="cloned-navbar-menu">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div id="cloned-navbar-menu" class="navbar-menu is-fixed">
+
+      <div class="navbar-end">
+        <a href="../../ecosystem/" id="navbar-item" class="navbar-item is-secondary">
+          Ecosystem
+        </a>
+        <a href="../../community/" id="navbar-item" class="navbar-item is-secondary">
+          Community
+        </a>
+        <a href="https://discuss.scientific-python.org" id="navbar-item" class="navbar-item is-secondary">
+          Forum
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+    
+
+    
+<section class="content-padding flex-row">
+    <div class="shortcuts-container">
+        <div class="shortcuts-title"><img src="../../images/icons/mui-icons_format-list-bulleted.svg"/>On this page</div>
+        <div id="shortcuts"></div>
+    </div>
+    <div class="content-container">
+        <div class="columns">
+            <div class="column is-centered-tablet-portrait">
+                <h1 class="title section-title">SPEC Purpose and Process</h1>
+                <h5 class="subtitle is-5 is-muted"></h5>
+                <div class="divider"></div>
+            </div>
+        </div>
+        <div class="post_meta">
+
+<div class="spec-meta">
+  <table>
+    
+      
+        
+      
+        <tr class="field">
+          <td class="field-name">
+            Authors:
+          </td>
+            <td class="field-value">
+              
+                Jarrod Millman &lt;millman@berkeley.edu&gt;,
+            
+              
+                Stéfan van der Walt &lt;stefanv@berkeley.edu&gt;
+            
+            </td></tr>
+      
+      
+      
+      
+        
+        
+        
+      
+        <tr class="field">
+          <td class="field-name">
+            History:
+          </td>
+            <td class="field-value">
+              <!-- raw HTML omitted --><a href="https://github.com/scientific-python/specs/commits/main/purpose-and-process/index.md">https://github.com/scientific-python/specs/commits/main/purpose-and-process/index.md</a><!-- raw HTML omitted -->
+            </td></tr>
+      
+      
+      </table>
+</div>
+
+</div>
+
+        <div class="post_content">
+          <h2 id="description">Description</h2>
+<p>The SPEC process is designed to identify areas of shared concern between projects
+in the scientific Python ecosystem and to produce collaboratively written,
+community adopted guidelines for addressing these.
+Such guidelines are known as SPECs: Scientific Python Ecosystem Coordination documents.</p>
+<p>Specifically, the purpose of the SPEC process is</p>
+<ol>
+<li>to help unify the ecosystem for users and developers;</li>
+<li>to provide guidance to projects on technical issues or processes;</li>
+<li>to document standard APIs, development tools, and community practices; and</li>
+<li>to foster ecosystem-wide discussions of common problems and to develop shared solutions.</li>
+</ol>
+<p>Projects in the ecosystem have an existing, diverse set of proposal processes
+and development constraints.
+SPECs complement these: they are a mechanism to encourage shared practices and
+improve uniformity of experience across projects.
+SPECs may, for example, capture established practices so that new projects can
+learn from them; or they may propose a new practice that the authors believe
+will benefit the ecosystem as a whole.</p>
+<p>Projects decide for themselves whether to adopt any given SPEC—often, this
+would be through team consensus.
+A SPEC may not be a good fit for every single project, and thus there is no
+expectation that all SPECs must be adopted by all projects.
+That said, SPECs serve their purpose through being adopted by
+several projects—and their authority stems from the extent to which they are.</p>
+<p>Participants in the SPEC process must adhere to our
+<a href="../../code_of_conduct/">Code of Conduct</a>.</p>
+<h3 id="key-terms">Key Terms</h3>
+<dl>
+<dt>Scientific Python Ecosystem</dt>
+<dd>The <strong>ecosystem</strong> is a loose federation of community developed Python projects
+widely used in scientific research that interact well with one another and that
+follow similar norms of development, documentation, testing, and so forth.</dd>
+<dt>SPEC Core Projects</dt>
+<dd>The <a href="../../specs/core-projects/">Core Projects</a>
+are a small subset of the ecosystem consisting of mature, community developed projects
+that are (a) depended upon by most of the other projects and (b) responsible for
+reviewing, discussing, implementing, and endorsing SPEC documents.</dd>
+<dt>SPEC Steering Committee</dt>
+<dd>The <a href="../../specs/steering-committee/">Steering Committee</a> leads the SPEC project and
+manages the SPEC process including moderating
+the <a href="https://discuss.scientific-python.org/c/specs/6">SPECs discussion forum</a>,
+accepting SPEC documents, and maintaining the SPEC process documents.</dd>
+<dt>SPEC Process</dt>
+<dd>The SPEC process is outlined in this document and the associated
+<a href="../../specs/steering-committee/">SPEC Steering Committee</a> and
+<a href="../../specs/core-projects/">SPEC Core Projects</a> documents.
+This process is managed and overseen by the Steering Committee, and functions in collaboration
+with the Core Projects, community members, and projects across the ecosystem.</dd>
+<dt>SPEC Document</dt>
+<dd>A <strong>SPEC document</strong> provides operational guidelines for projects and helps
+coordinate the ecosystem to provide a more unified experience for users and developers.
+These documents are developed collaboratively with the Core Projects and other interested
+ecosystem projects and community members.</dd>
+</dl>
+<h3 id="format">Format</h3>
+<p>SPECs are UTF-8 encoded text files using
+<a href="https://www.markdownguide.org/">Markdown</a> format and stored in the
+<a href="https://github.com/scientific-python/specs">SPEC repository</a>.
+The SPEC documents are converted to HTML by code in the
+<a href="https://github.com/scientific-python/scientific-python.org/">scientific-python.org repository</a> using
+<a href="https://gohugo.io/">Hugo</a> and deployed to
+<a href="https://scientific-python.org/specs/">https://scientific-python.org/specs/</a>.
+Each SPEC has a corresponding
+<a href="https://discuss.scientific-python.org/c/specs/accepted/15">discussion</a>
+with the same title, where anyone can comment, ask questions, or vote on
+existing comments.</p>
+<h2 id="implementation">Implementation</h2>
+<p>The Steering Committee manages the SPEC process and will provide guidance to contributors
+throughout the process.
+In this section, we provide an overview of the main decision points in the SPEC process
+and provide guidance for how to get started with a new SPEC proposal.</p>
+<h3 id="decision-points">Decision Points</h3>
+<p>A SPEC passes through three decision points over the course of
+its development and implementation:
+<strong>Accept</strong>, <strong>Endorse</strong>, and <strong>Adopt</strong>.</p>
+<!-- raw HTML omitted -->
+
+<script async src="https://unpkg.com/mermaid@8.8.4/dist/mermaid.min.js"></script>
+<div class="mermaid">
+  
+graph LR
+
+START[ ]--> |Propose| A[Accept]
+A--> |Draft| B[Endorse]
+B--> |Recommend| C[Adopt]
+
+click A callback "Steering Committee Action"
+click B callback "Core Project Action"
+click C callback "Ecosystem Action"
+
+style START fill:#FFFFFF, stroke:#FFFFFF;
+
+
+</div>
+
+<!-- raw HTML omitted -->
+<p>The <strong>accept decision</strong> is made by the Steering Committee and means the proposed SPEC is
+accepted as a draft and added to the main branch of the
+<a href="https://github.com/scientific-python/specs">SPEC repository</a>.
+Proposed SPECs are accepted once (a) the draft is written to clearly explain the area of
+common concern and a general approach to a shared solution and (b) there
+are contributors (from at least two Core Projects) interested in working on the new SPEC
+and in championing it to their projects as well as the larger community.
+Additional details may be found in
+<a href="../../specs/steering-committee/">Steering Committee documentation</a>.</p>
+<p>The <strong>endorse decision</strong> is made by the Core Projects.
+The Core Projects and interested community members revise the accepted SPEC in a
+collabortive and iterative process focused on ensuring the SPEC implementation plan that
+is broadly applicable and likely to be widely adopted.
+The intent is that most SPECs will have several authors from numerous projects
+including several Core Projects.
+A SPEC is recommended for wide-spread adoption once it is endorsed by two (or more) Core Projects.
+Once a SPEC is recommended, further changes require the approval of all endorsing
+Core Projects.
+Additional details may be found in
+<a href="../../specs/core-projects/">Core Project documentation</a>.</p>
+<p>The <strong>adopt decision</strong> is made by individual projects according to their own decision-making
+processes.
+Any project in the ecosystem is welcome to adopt a SPEC at any point.
+However, it may make sense to wait until a SPEC is endorsed by several Core Projects.
+This ensures that the SPEC has been vetted and deemed stable enough for widespread adoption.
+Once a SPEC is endorsed by several Core Projects it may still evolve,
+but the barrier for modifying the SPEC will increase substantially
+(since all endorsing projects would need to agree to changes).
+Projects that adopt a SPEC early should engage in the collaborative process
+leading to the SPEC being endorsed by the Core Projects.
+Each SPEC describes what adopting it means in its <em>Ecosystem Adoption</em> section.</p>
+<h3 id="new-spec-proposals">New SPEC Proposals</h3>
+<p>A good SPEC proposal focuses on a single key recommendation or idea for
+coordinating projects in the scientific Python ecosystem.
+Before proposing a SPEC, we highly recommended that you first <strong>vet the idea</strong>
+by doing one or more of the following:</p>
+<ol>
+<li>discuss the idea with at least one project in the ecosystem,</li>
+<li>discuss the idea with at least one other member of the ecosystem, or</li>
+<li>create a minimal, proof of concept prototype.</li>
+</ol>
+<p>Before a proposed SPEC can be accepted, the idea must be discussed on the
+discussion forum under the <a href="https://discuss.scientific-python.org/c/specs/ideas/9"><code>SPECS/Ideas</code> topic</a>.
+Thereafter a new SPEC document must be submitted
+as a pull request to the <a href="https://github.com/scientific-python/specs">SPEC repository</a>.</p>
+<p>Use the <code>quickstart.py</code> script to create the new SPEC document.
+Located at the top-level of the
+<a href="https://github.com/scientific-python/specs">SPEC repository</a>,
+the script will ask you a few questions<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> and then create a new file
+appropriately named with a basic template for you to complete.
+Once the SPEC is in reasonable shape, file a pull request against the
+<a href="https://github.com/scientific-python/specs">SPEC repository</a>.
+The Steering Committee then considers the SPEC as presented
+in the pull request and will provide additional guidance.</p>
+<h2 id="notes">Notes</h2>
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p>When asked to enter the SPEC number, choose the next available number that
+has not yet been used.
+Before the SPEC is merged, the Steering Committee may ask you to change the SPEC number so
+that it doesn&rsquo;t conflict with another pull request.
+If so, just rename the file as appropriate and update the SPEC number in the
+<code>title</code> field of the SPEC header.</p>
+<p>The script currently only supports adding one author.
+If you need to add additional authors, just edit the text file.</p>
+<p>Additional files associated with a SPEC document may be kept in a directory
+with the same filename (without the <code>.md</code> extension) as the SPEC.
+For example, files associated with <code>spec-0000.md</code> are in <code>spec-0000</code>.</p>
+<p>Leave the <code>draft</code> field set to <code>true</code> and the <code>endorsed-by</code> field empty.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
+
+        </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+    
+    <div id="backtotop"><a href="#" id="backtotop-color"></a></div>
+
+    
+    
+
+<footer id="footer" class="footer">
+  <div class="container is-max-widescreen">
+    <div id="footer-columns" class="columns">
+      <div class="footer-logo-column">
+        <img id="footer-logo" src="../../images/logo.svg" alt="Scientific Python logo. A green tree on a white hill at the end of a green path in the shape of the letter &#39;S&#39;.">
+      </div>
+        <div class="link-column">
+          <div class="footer-column">
+            <div class="footer-header">
+            </div>
+            <ul class="link-list">
+              <li class="link-list">
+                <a class="footer-link" href="../../about/">
+                  About
+                </a>
+              </li>
+              <li class="link-list">
+                <a class="footer-link" href="../../roadmap/">
+                  Roadmap
+                </a>
+              </li>
+              <li class="link-list">
+                <a class="footer-link" href="../../code_of_conduct/">
+                  Code of Conduct
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="link-column">
+          <div class="footer-column">
+            <div class="footer-header">
+            </div>
+            <ul class="link-list">
+              <li class="link-list">
+                <a class="footer-link" href="../../specs/">
+                  SPECs
+                </a>
+              </li>
+              <li class="link-list">
+                <a class="footer-link" href="../../grants/">
+                  Grants
+                </a>
+              </li>
+              <li class="link-list">
+                <a class="footer-link" href="../../calendars">
+                  Calendars
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="link-column">
+          <div class="footer-column">
+            <div class="footer-header">
+            </div>
+            <ul class="link-list">
+              <li class="link-list">
+                <a class="footer-link" href="../../press-kit">
+                  Press kit
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-actions">
+          
+
+          <nav class="level is-mobile">
+            <div class="social-media-icons">
+              <a class="level-item" href="https://github.com/scientific-python/" aria-label="https://github.com/scientific-python/">
+                <span class="icon"><i class="fab fa-github"></i></span>
+              </a>
+              <a class="level-item" href="https://www.youtube.com/channel/UC2wKi87Wmy9C1OQMyD9fGxA" aria-label="https://www.youtube.com/channel/UC2wKi87Wmy9C1OQMyD9fGxA">
+                <span class="icon"><i class="fab fa-youtube"></i></span>
+              </a>
+              <a class="level-item" href="https://twitter.com/scientific_py" aria-label="https://twitter.com/scientific_py">
+                <span class="icon"><i class="fab fa-twitter"></i></span>
+              </a>
+              <a class="level-item" href="https://facebook.com/scientific.python" aria-label="https://facebook.com/scientific.python">
+                <span class="icon"><i class="fab fa-facebook"></i></span>
+              </a>
+              <a class="level-item" href="https://www.instagram.com/scientific.python/" aria-label="https://www.instagram.com/scientific.python/">
+                <span class="icon"><i class="fab fa-instagram"></i></span>
+              </a>
+              <a class="level-item" href="https://www.tiktok.com/@scientific.python" aria-label="https://www.tiktok.com/@scientific.python">
+                <span class="icon"><i class="fab fa-tiktok"></i></span>
+              </a>
+            </div>
+          </nav>
+          <div class="copyright">&copy; 2021 Scientific Python. All rights reserved.</div>
+        </div>
+    </div>
+  </div>
+</footer>
+
+    
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="../../js/fresh.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.7.6/dist/js/uikit.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.7.6/dist/css/uikit.min.css" />
+
+<script src="../../js/shortcuts.js"></script>
+<script type="text/javascript">setupShortcuts(maxLevel= 2 );</script>
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" src="../../js/youtube_page.js"></script>
+
+
+
+
+
+
+
+
+
+
+    
+<script defer data-domain="scientific-python.org" src="https://views.scientific-python.org/js/script.js"></script>
+
+
+  </body>
+</html>

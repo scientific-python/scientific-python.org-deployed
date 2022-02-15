@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Community on Scientific Python</title>
+    <link>https://scientific-python.org/community/</link>
+    <description>Recent content in Community on Scientific Python</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://scientific-python.org/community/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Choosing a project</title>
+      <link>https://scientific-python.org/community/choosing-a-project/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://scientific-python.org/community/choosing-a-project/</guid>
+      <description>[DRAFT] This video has not been recorded yet.
+Contributing to a Scientific Python project A common question from new contributors is: &amp;ldquo;how do I choose which project to contribute to&amp;rdquo;? Some people end up contributing to many different projects, while others tend to focus their effort on a single project. Ultimately, the most important factors in this decision are your own personal goals and interests! The projects in the ecosystem have a lot in common; however, it is important to recognize that each project has it&amp;rsquo;s own community, so there may be differences in the overall goals and decision-making processes for each project.</description>
+    </item>
+    
+    <item>
+      <title>First contribution</title>
+      <link>https://scientific-python.org/community/first-contribution/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://scientific-python.org/community/first-contribution/</guid>
+      <description>[DRAFT] This video has not been recorded yet.
+How to make your first contribution to open source? Before you start, make sure you have the following:
+ A GitHub account A terminal or command line An editor or IDE Git installed in your computer Conda installed in your computer  There are some links below the video to help you get these elements ready in case you are missing some.</description>
+    </item>
+    
+    <item>
+      <title>Getting started</title>
+      <link>https://scientific-python.org/community/getting-started/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://scientific-python.org/community/getting-started/</guid>
+      <description>[DRAFT] This video has not been recorded yet.
+Choosing a project to work on How should you choose which project to work on? There are many projects in the ecosystem to choose from so it’s important to find one related to something you’re interested in or is a project you already use. For example, if you’re interested in working with images, it might be worth looking into implementing algorithms in scikit-image.</description>
+    </item>
+    
+    <item>
+      <title>Ways to contribute</title>
+      <link>https://scientific-python.org/community/ways-to-contribute/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://scientific-python.org/community/ways-to-contribute/</guid>
+      <description>[DRAFT] This video has not been recorded yet.
+5 ways to contribute to Scientific Python without coding Scientific Python is code designed by scientists and engineers for science and engineering. All projects have a straightforward license that determines what you can and cannot do; typically, you may use and modify the software, as long as you give credit to the original authors. The entire ecosystem relies on peer review and community production, so your contribution is really important.</description>
+    </item>
+    
+    <item>
+      <title>Why contribute</title>
+      <link>https://scientific-python.org/community/why-contribute/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://scientific-python.org/community/why-contribute/</guid>
+      <description>[DRAFT] This video has not been recorded yet.
+Your time is the most valuable thing you have, so when taking part in volunteer activities it is always worth asking &amp;ldquo;why?&amp;rdquo;. Here are a few reasons:
+Advance science First, Scientific Python is about science. And if you believe that science makes the world better, then improving scientific tooling is extremely important! By putting better open source tools in the hands of researchers, we can help them to produce accurate results, do so in a transparent way, while also improving reproducibility.</description>
+    </item>
+    
+  </channel>
+</rss>

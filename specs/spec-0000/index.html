@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta name="description" content="Community developed and owned ecosystem for scientific computing" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>Scientific Python</title>
+
+    
+    
+
+
+
+
+<link href="https://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet">
+
+
+<link rel="stylesheet" type="text/css" href="../../css/fresh/core.min.8824700ca67de8e3d9af90697cb5fc1586be1208834efb62581349c1e8900df2.css" integrity="sha256-iCRwDKZ96OPZr5BpfLX8FYa&#43;EgiDTvtiWBNJweiQDfI=">
+
+
+<link rel="icon" href="../../images/favicon.ico" />
+
+<link rel="stylesheet" href="../../css/scientific-python-hugo-theme/bulma.css">
+<link rel="stylesheet" href="../../css/scientific-python-hugo-theme/vars.css">
+<link rel="stylesheet" href="../../css/scientific-python-hugo-theme/styles.css">
+<link rel="stylesheet" href="../../css/scientific-python-hugo-theme/content.css">
+<link rel="stylesheet" href="../../css/scientific-python-hugo-theme/news.css">
+<link rel="stylesheet" href="../../css/scientific-python-hugo-theme/keyfeatures.css">
+<link rel="stylesheet" href="../../css/scientific-python-hugo-theme/tables.css">
+<link rel="stylesheet" href="../../css/scientific-python-hugo-theme/videos.css">
+<link rel="stylesheet" href="../../css/scientific-python-hugo-theme/posts.css">
+<link rel="stylesheet" href="../../css/scientific-python-hugo-theme/teams.css">
+<link rel="stylesheet" href="../../css/scientific-python-hugo-theme/code-highlight.css">
+<link rel="stylesheet" href="../../css/scientific-python-hugo-theme/shortcuts.css">
+
+
+
+<link rel="stylesheet" href="../../css/user/custom.min.2d740a39b0c7b68afd33331c206baa5533fbac2c3766fb33638d42e9d741f1e2.css" integrity="sha256-LXQKObDHtor9MzMcIGuqVTP7rCw3ZvszY41C6ddB8eI=">
+
+
+
+
+    
+    
+
+    
+    
+  </head>
+  <body>
+    
+    
+
+    
+    
+<nav id="nav" class="navbar is-fresh is-transparent no-shadow" role="navigation" aria-label="main navigation">
+  <div class="container is-max-widescreen">
+    <div class="navbar-brand">
+      
+      <a id="navbar-item" class="navbar-item" href="../../">
+        <img id="navbar-logo" src="../../images/logo.svg" alt="A green tree on a white hill at the end of a green path in the shape of the letter &#39;S&#39;.">
+        <div id="navbar-logo-text">Scientific Python</div>
+      </a>
+      
+
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbar-menu">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div id="navbar-menu" class="navbar-menu is-static">
+
+      <div class="navbar-end">
+        <a href="../../ecosystem/" id="navbar-item" class="navbar-item is-secondary">
+          Ecosystem
+        </a>
+        <a href="../../community/" id="navbar-item" class="navbar-item is-secondary">
+          Community
+        </a>
+        <a href="https://discuss.scientific-python.org" id="navbar-item" class="navbar-item is-secondary">
+          Forum
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+    
+<nav id="navbar-clone" class="navbar is-fresh is-transparent" role="navigation" aria-label="main navigation">
+  <div class="container is-max-widescreen">
+    <div class="navbar-brand">
+      <a id="navbar-item" class="navbar-item" href="../../">
+        <img id="navbar-logo" src="../../images/logo.svg" alt="A green tree on a white hill at the end of a green path in the shape of the letter &#39;S&#39;.">
+        <div id="navbar-logo-text">Scientific Python</div>
+      </a>
+
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="cloned-navbar-menu">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div id="cloned-navbar-menu" class="navbar-menu is-fixed">
+
+      <div class="navbar-end">
+        <a href="../../ecosystem/" id="navbar-item" class="navbar-item is-secondary">
+          Ecosystem
+        </a>
+        <a href="../../community/" id="navbar-item" class="navbar-item is-secondary">
+          Community
+        </a>
+        <a href="https://discuss.scientific-python.org" id="navbar-item" class="navbar-item is-secondary">
+          Forum
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+    
+
+    
+<section class="content-padding flex-row">
+    <div class="shortcuts-container">
+        <div class="shortcuts-title"><img src="../../images/icons/mui-icons_format-list-bulleted.svg"/>On this page</div>
+        <div id="shortcuts"></div>
+    </div>
+    <div class="content-container">
+        <div class="columns">
+            <div class="column is-centered-tablet-portrait">
+                <h1 class="title section-title">SPEC 0 — Minimum Supported Versions</h1>
+                <h5 class="subtitle is-5 is-muted"></h5>
+                <div class="divider"></div>
+            </div>
+        </div>
+        <div class="post_meta">
+
+<div class="spec-meta">
+  <table>
+    
+      
+        
+      
+        <tr class="field">
+          <td class="field-name">
+            Authors:
+          </td>
+            <td class="field-value">
+              
+                Jarrod Millman &lt;millman@berkeley.edu&gt;,
+            
+              
+                Ross Barnowski &lt;rossbar@berkeley.edu&gt;,
+            
+              
+                Stéfan van der Walt &lt;stefanv@berkeley.edu&gt;
+            
+            </td></tr>
+      
+      
+      
+        <tr class="field">
+          <td class="field-name">
+            Discussion:
+          </td>
+            <td class="field-value">
+              <a href="https://discuss.scientific-python.org/t/spec-0-minimum-supported-versions/33">https://discuss.scientific-python.org/t/spec-0-minimum-supported-versions/33</a>
+            </td></tr>
+      
+      
+        
+        
+        
+      
+        <tr class="field">
+          <td class="field-name">
+            History:
+          </td>
+            <td class="field-value">
+              <!-- raw HTML omitted --><a href="https://github.com/scientific-python/specs/commits/main/spec-0000/index.md">https://github.com/scientific-python/specs/commits/main/spec-0000/index.md</a><!-- raw HTML omitted -->
+            </td></tr>
+      
+      
+      
+        <tr class="field">
+          <td class="field-name">
+            Endorsed by:
+          </td>
+            <td class="field-value">
+              
+            </td></tr>
+      
+          
+          <tr class="field">
+              <td class="field-name">&nbsp;</td>
+              <td class="field-value"></td>
+          </tr>
+          
+          <tr class="field" style="background-color:crimson;color:white;">
+            <td class="field-name">
+              &nbsp; WARNING:
+            </td>
+            <td class="field-value">
+              Draft document.
+            </td>
+          </div></table>
+</div>
+
+</div>
+
+        <div class="post_content">
+          <h2 id="description">Description</h2>
+<p>This SPEC recommends that all projects across the Scientific Python ecosystem adopt a common time-based policy for dropping support of older Python and core package versions.</p>
+<p>All versions refer to feature releases (i.e., Python 3.8.0, NumPy 1.19.0; not Python 3.8.1, NumPy 1.19.2).</p>
+<p>Specifically, we recommend that:</p>
+<ol>
+<li>Support for a given version of Python be dropped <strong>3 years</strong> after its initial release.</li>
+<li>Support for a given version of other core packages be dropped <strong>2 years</strong> after their initial release.</li>
+</ol>
+<p>We illustrate this SPEC with release dates of NumPy, SciPy, and Matplotlib.</p>
+<!-- raw HTML omitted -->
+
+<script async src="https://unpkg.com/mermaid@8.8.4/dist/mermaid.min.js"></script>
+<div class="mermaid">
+  
+gantt
+dateFormat  YYYY-MM-DD
+axisFormat  %m / %Y
+title Support Window
+
+section Python
+3.7  :     py37, 2018-06-27,2021-06-26
+3.8  :     py38, 2019-10-14,2022-10-13
+3.9  :     py39, 2020-10-05,2023-10-05
+
+section NumPy
+1.17  :     np117, 2019-07-26,2021-07-25
+1.18  :     np118, 2019-12-22,2021-12-21
+1.19  :     np119, 2020-06-20,2022-06-20
+
+section SciPy
+1.3  :     sp13, 2019-05-17,2021-05-16
+1.4  :     sp14, 2019-12-16,2021-12-15
+1.5  :     sp15, 2020-06-21,2022-06-21
+1.6  :     sp16, 2020-12-31,2022-12-31
+
+section Matplotlib
+3.1  :     mpl31, 2019-05-18,2021-05-17
+3.2  :     mpl32, 2020-03-04,2022-03-04
+3.3  :     mpl33, 2020-07-16,2022-07-16
+
+
+</div>
+
+<!-- raw HTML omitted -->
+<h3 id="motivation">Motivation</h3>
+<p>Limiting the scope of supported dependencies is an effective way for packages to limit maintenance burden.
+Combinations of packages need to be tested, which impacts also on continuous integration times and infrastructure upkeep.
+Code itself also becomes more complicated when it has to be aware of various combinations of configurations.</p>
+<p>Adoption of this SPEC will ensure a consistent support policy across packages, and reduce the need for individual projects to divise similar policies.</p>
+<p>Ultimately, reduced maintenance burden frees up developer time, which translates into more features, bugfixes, and optimizations for users.</p>
+<h3 id="background">Background</h3>
+<p>In the past, longer support cycles were common.
+There were several reasons for this, including the Python 2 / 3 transition, difficulties installing packages, and users needing to use old, operating-system provided versions of Python.
+The situation has since improved due to improved installations via binary wheels, virtual environments becoming commonplace, and support for Python 2 being dropped.</p>
+<h3 id="drop-schedule">Drop Schedule</h3>
+<pre><code>On May 16, 2021 drop support for SciPy 1.3 (initially released on May 17, 2019)
+On May 17, 2021 drop support for Matplotlib 3.1 (initially released on May 18, 2019)
+On Jun 26, 2021 drop support for Python 3.7 (initially released on Jun 27, 2018)
+On Jul 25, 2021 drop support for NumPy 1.17 (initially released on Jul 26, 2019)
+On Dec 15, 2021 drop support for SciPy 1.4 (initially released on Dec 16, 2019)
+On Dec 21, 2021 drop support for NumPy 1.18 (initially released on Dec 22, 2019)
+On Mar 04, 2022 drop support for Matplotlib 3.2 (initially released on Mar 04, 2020)
+On Jun 20, 2022 drop support for NumPy 1.19 (initially released on Jun 20, 2020)
+On Jun 21, 2022 drop support for SciPy 1.5 (initially released on Jun 21, 2020)
+On Jul 16, 2022 drop support for Matplotlib 3.3 (initially released on Jul 16, 2020)
+On Oct 13, 2022 drop support for Python 3.8 (initially released on Oct 14, 2019)
+On Dec 31, 2022 drop support for SciPy 1.6 (initially released on Dec 31, 2020)
+On Oct 05, 2023 drop support for Python 3.9 (initially released on Oct 05, 2020)
+</code></pre>
+<h2 id="implementation">Implementation</h2>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<h3 id="core-project-endorsement">Core Project Endorsement</h3>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<h3 id="ecosystem-adoption">Ecosystem Adoption</h3>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<h2 id="notes">Notes</h2>
+<ul>
+<li>
+<p>This document builds on <a href="https://numpy.org/neps/nep-0029-deprecation_policy.html">NEP 29</a>, which describes several alternatives including ad hoc version support, all CPython supported versions, default version on Linux distribution, N minor versions of Python, and time window from the X.Y.1 Python release.</p>
+</li>
+<li>
+<p>Code to generate support and drop schedule tables:</p>
+</li>
+</ul>
+
+<div class="readcode">
+  <div class="readcode-download">
+    <a href='versions.py' download>Download versions.py</a>
+  </div>
+  <div class="readcode-code"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">datetime</span><span class="p">,</span> <span class="n">timedelta</span>
+
+<span class="n">plus36</span> <span class="o">=</span> <span class="n">timedelta</span><span class="p">(</span><span class="n">days</span><span class="o">=</span><span class="nb">int</span><span class="p">(</span><span class="mi">365</span> <span class="o">*</span> <span class="mi">3</span><span class="p">))</span>
+<span class="n">plus24</span> <span class="o">=</span> <span class="n">timedelta</span><span class="p">(</span><span class="n">days</span><span class="o">=</span><span class="nb">int</span><span class="p">(</span><span class="mi">365</span> <span class="o">*</span> <span class="mi">2</span><span class="p">))</span>
+
+<span class="c1"># Release data</span>
+
+<span class="n">py_releases</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="mf">3.7</span><span class="p">:</span> <span class="s2">&#34;Jun 27, 2018&#34;</span><span class="p">,</span>
+    <span class="mf">3.8</span><span class="p">:</span> <span class="s2">&#34;Oct 14, 2019&#34;</span><span class="p">,</span>
+    <span class="mf">3.9</span><span class="p">:</span> <span class="s2">&#34;Oct 5, 2020&#34;</span><span class="p">,</span>
+<span class="p">}</span>
+
+<span class="n">np_releases</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="mf">1.17</span><span class="p">:</span> <span class="s2">&#34;Jul 26, 2019&#34;</span><span class="p">,</span>
+    <span class="mf">1.18</span><span class="p">:</span> <span class="s2">&#34;Dec 22, 2019&#34;</span><span class="p">,</span>
+    <span class="mf">1.19</span><span class="p">:</span> <span class="s2">&#34;Jun 20, 2020&#34;</span><span class="p">,</span>
+<span class="p">}</span>
+
+<span class="n">sp_releases</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="mf">1.3</span><span class="p">:</span> <span class="s2">&#34;May 17, 2019&#34;</span><span class="p">,</span>
+    <span class="mf">1.4</span><span class="p">:</span> <span class="s2">&#34;Dec 16, 2019&#34;</span><span class="p">,</span>
+    <span class="mf">1.5</span><span class="p">:</span> <span class="s2">&#34;Jun 21, 2020&#34;</span><span class="p">,</span>
+    <span class="mf">1.6</span><span class="p">:</span> <span class="s2">&#34;Dec 31, 2020&#34;</span><span class="p">,</span>
+<span class="p">}</span>
+
+<span class="n">mpl_releases</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="mf">3.1</span><span class="p">:</span> <span class="s2">&#34;May 18, 2019&#34;</span><span class="p">,</span>
+    <span class="mf">3.2</span><span class="p">:</span> <span class="s2">&#34;Mar 4, 2020&#34;</span><span class="p">,</span>
+    <span class="mf">3.3</span><span class="p">:</span> <span class="s2">&#34;Jul 16, 2020&#34;</span><span class="p">,</span>
+<span class="p">}</span>
+
+<span class="c1"># Get support window</span>
+
+
+<span class="k">def</span> <span class="nf">support_window</span><span class="p">(</span><span class="n">project</span><span class="p">,</span> <span class="n">releases</span><span class="p">,</span> <span class="n">support_time</span><span class="p">):</span>
+    <span class="n">windows</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">version</span><span class="p">,</span> <span class="n">release_date</span> <span class="ow">in</span> <span class="n">releases</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+        <span class="n">release</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">strptime</span><span class="p">(</span><span class="n">release_date</span><span class="p">,</span> <span class="s2">&#34;%b </span><span class="si">%d</span><span class="s2">, %Y&#34;</span><span class="p">)</span>
+        <span class="n">drop</span> <span class="o">=</span> <span class="n">release</span> <span class="o">+</span> <span class="n">support_time</span>
+        <span class="n">windows</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">project</span><span class="p">,</span> <span class="n">version</span><span class="p">,</span> <span class="n">release</span><span class="p">,</span> <span class="n">drop</span><span class="p">))</span>
+    <span class="k">return</span> <span class="n">windows</span>
+
+
+<span class="n">py_support_window</span> <span class="o">=</span> <span class="n">support_window</span><span class="p">(</span><span class="s2">&#34;Python&#34;</span><span class="p">,</span> <span class="n">py_releases</span><span class="p">,</span> <span class="n">plus36</span><span class="p">)</span>
+<span class="n">np_support_window</span> <span class="o">=</span> <span class="n">support_window</span><span class="p">(</span><span class="s2">&#34;NumPy&#34;</span><span class="p">,</span> <span class="n">np_releases</span><span class="p">,</span> <span class="n">plus24</span><span class="p">)</span>
+<span class="n">sp_support_window</span> <span class="o">=</span> <span class="n">support_window</span><span class="p">(</span><span class="s2">&#34;SciPy&#34;</span><span class="p">,</span> <span class="n">sp_releases</span><span class="p">,</span> <span class="n">plus24</span><span class="p">)</span>
+<span class="n">mpl_support_window</span> <span class="o">=</span> <span class="n">support_window</span><span class="p">(</span><span class="s2">&#34;Matplotlib&#34;</span><span class="p">,</span> <span class="n">mpl_releases</span><span class="p">,</span> <span class="n">plus24</span><span class="p">)</span>
+
+
+<span class="c1"># Print Gantt chart</span>
+
+
+<span class="k">def</span> <span class="nf">gantt_section</span><span class="p">(</span><span class="n">window</span><span class="p">,</span> <span class="n">prefix</span><span class="p">):</span>
+    <span class="n">section</span> <span class="o">=</span> <span class="s2">&#34;&#34;</span>
+    <span class="k">for</span> <span class="n">project</span><span class="p">,</span> <span class="n">version</span><span class="p">,</span> <span class="n">release</span><span class="p">,</span> <span class="n">drop</span> <span class="ow">in</span> <span class="n">window</span><span class="p">:</span>
+        <span class="n">version_name</span> <span class="o">=</span> <span class="n">prefix</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">version</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&#34;.&#34;</span><span class="p">,</span> <span class="s2">&#34;&#34;</span><span class="p">)</span>
+        <span class="n">release_date</span> <span class="o">=</span> <span class="n">release</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&#34;%Y-%m-</span><span class="si">%d</span><span class="s2">&#34;</span><span class="p">)</span>
+        <span class="n">drop_date</span> <span class="o">=</span> <span class="n">drop</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&#34;%Y-%m-</span><span class="si">%d</span><span class="s2">&#34;</span><span class="p">)</span>
+        <span class="n">section</span> <span class="o">+=</span> <span class="sa">f</span><span class="s2">&#34;</span><span class="si">{</span><span class="n">version</span><span class="si">}</span><span class="s2">  :     </span><span class="si">{</span><span class="n">version_name</span><span class="si">}</span><span class="s2">, </span><span class="si">{</span><span class="n">release_date</span><span class="si">}</span><span class="s2">,</span><span class="si">{</span><span class="n">drop_date</span><span class="si">}</span><span class="se">\n</span><span class="s2">&#34;</span>
+    <span class="k">return</span> <span class="n">section</span>
+
+
+<span class="n">py_gantt_section</span> <span class="o">=</span> <span class="n">gantt_section</span><span class="p">(</span><span class="n">py_support_window</span><span class="p">,</span> <span class="s2">&#34;py&#34;</span><span class="p">)</span>
+<span class="n">np_gantt_section</span> <span class="o">=</span> <span class="n">gantt_section</span><span class="p">(</span><span class="n">np_support_window</span><span class="p">,</span> <span class="s2">&#34;np&#34;</span><span class="p">)</span>
+<span class="n">sp_gantt_section</span> <span class="o">=</span> <span class="n">gantt_section</span><span class="p">(</span><span class="n">sp_support_window</span><span class="p">,</span> <span class="s2">&#34;sp&#34;</span><span class="p">)</span>
+<span class="n">mpl_gantt_section</span> <span class="o">=</span> <span class="n">gantt_section</span><span class="p">(</span><span class="n">mpl_support_window</span><span class="p">,</span> <span class="s2">&#34;mpl&#34;</span><span class="p">)</span>
+
+<span class="n">gantt</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&#34;&#34;&#34;
+</span><span class="s2">&lt;!-- prettier-ignore-start --&gt;
+</span><span class="s2"></span><span class="se">{{{{</span><span class="s2">&lt;mermaid&gt;</span><span class="se">}}}}</span><span class="s2">
+</span><span class="s2">gantt
+</span><span class="s2">dateFormat  YYYY-MM-DD
+</span><span class="s2">axisFormat  %m / %Y
+</span><span class="s2">title Support Window
+</span><span class="s2">
+</span><span class="s2">section Python
+</span><span class="s2"></span><span class="si">{</span><span class="n">py_gantt_section</span><span class="si">}</span><span class="s2">
+</span><span class="s2">section NumPy
+</span><span class="s2"></span><span class="si">{</span><span class="n">np_gantt_section</span><span class="si">}</span><span class="s2">
+</span><span class="s2">section SciPy
+</span><span class="s2"></span><span class="si">{</span><span class="n">sp_gantt_section</span><span class="si">}</span><span class="s2">
+</span><span class="s2">section Matplotlib
+</span><span class="s2"></span><span class="si">{</span><span class="n">mpl_gantt_section</span><span class="si">}</span><span class="s2">
+</span><span class="s2"></span><span class="se">{{{{</span><span class="s2">&lt;/mermaid&gt;</span><span class="se">}}}}</span><span class="s2">
+</span><span class="s2">&lt;!-- prettier-ignore-end --&gt;
+</span><span class="s2">&#34;&#34;&#34;</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">gantt</span><span class="p">)</span>
+
+<span class="c1"># Print drop schedule</span>
+
+
+<span class="k">def</span> <span class="nf">get_drop_dates</span><span class="p">(</span><span class="n">window</span><span class="p">):</span>
+    <span class="k">return</span> <span class="p">{</span><span class="s2">&#34; &#34;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="n">proj</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="n">ver</span><span class="p">)]):</span> <span class="p">[</span><span class="n">rel</span><span class="p">,</span> <span class="n">drop</span><span class="p">]</span> <span class="k">for</span> <span class="n">proj</span><span class="p">,</span> <span class="n">ver</span><span class="p">,</span> <span class="n">rel</span><span class="p">,</span> <span class="n">drop</span> <span class="ow">in</span> <span class="n">window</span><span class="p">}</span>
+
+
+<span class="n">py_drop</span> <span class="o">=</span> <span class="n">get_drop_dates</span><span class="p">(</span><span class="n">py_support_window</span><span class="p">)</span>
+<span class="n">np_drop</span> <span class="o">=</span> <span class="n">get_drop_dates</span><span class="p">(</span><span class="n">np_support_window</span><span class="p">)</span>
+<span class="n">sp_drop</span> <span class="o">=</span> <span class="n">get_drop_dates</span><span class="p">(</span><span class="n">sp_support_window</span><span class="p">)</span>
+<span class="n">mpl_drop</span> <span class="o">=</span> <span class="n">get_drop_dates</span><span class="p">(</span><span class="n">mpl_support_window</span><span class="p">)</span>
+
+<span class="n">releases</span> <span class="o">=</span> <span class="n">py_drop</span> <span class="o">|</span> <span class="n">np_drop</span> <span class="o">|</span> <span class="n">sp_drop</span> <span class="o">|</span> <span class="n">mpl_drop</span>
+<span class="n">releases</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="nb">sorted</span><span class="p">(</span><span class="n">releases</span><span class="o">.</span><span class="n">items</span><span class="p">(),</span> <span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">item</span><span class="p">:</span> <span class="n">item</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">]))</span>
+
+<span class="k">for</span> <span class="n">package</span><span class="p">,</span> <span class="n">dates</span> <span class="ow">in</span> <span class="n">releases</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span>
+        <span class="sa">f</span><span class="s2">&#34;On </span><span class="si">{</span><span class="n">dates</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s1">&#39;%b </span><span class="si">%d</span><span class="s1">, %Y&#39;</span><span class="p">)</span><span class="si">}</span><span class="s2"> drop support for </span><span class="si">{</span><span class="n">package</span><span class="si">}</span><span class="s2"> &#34;</span>
+        <span class="sa">f</span><span class="s2">&#34;(initially released on </span><span class="si">{</span><span class="n">dates</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s1">&#39;%b </span><span class="si">%d</span><span class="s1">, %Y&#39;</span><span class="p">)</span><span class="si">}</span><span class="s2">)&#34;</span>
+    <span class="p">)</span>
+</code></pre></div></div>
+</div>
+
+
+        </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+    
+    <div id="backtotop"><a href="#" id="backtotop-color"></a></div>
+
+    
+    
+
+<footer id="footer" class="footer">
+  <div class="container is-max-widescreen">
+    <div id="footer-columns" class="columns">
+      <div class="footer-logo-column">
+        <img id="footer-logo" src="../../images/logo.svg" alt="Scientific Python logo. A green tree on a white hill at the end of a green path in the shape of the letter &#39;S&#39;.">
+      </div>
+        <div class="link-column">
+          <div class="footer-column">
+            <div class="footer-header">
+            </div>
+            <ul class="link-list">
+              <li class="link-list">
+                <a class="footer-link" href="../../about/">
+                  About
+                </a>
+              </li>
+              <li class="link-list">
+                <a class="footer-link" href="../../roadmap/">
+                  Roadmap
+                </a>
+              </li>
+              <li class="link-list">
+                <a class="footer-link" href="../../code_of_conduct/">
+                  Code of Conduct
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="link-column">
+          <div class="footer-column">
+            <div class="footer-header">
+            </div>
+            <ul class="link-list">
+              <li class="link-list">
+                <a class="footer-link" href="../../specs/">
+                  SPECs
+                </a>
+              </li>
+              <li class="link-list">
+                <a class="footer-link" href="../../grants/">
+                  Grants
+                </a>
+              </li>
+              <li class="link-list">
+                <a class="footer-link" href="../../calendars">
+                  Calendars
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="link-column">
+          <div class="footer-column">
+            <div class="footer-header">
+            </div>
+            <ul class="link-list">
+              <li class="link-list">
+                <a class="footer-link" href="../../press-kit">
+                  Press kit
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-actions">
+          
+
+          <nav class="level is-mobile">
+            <div class="social-media-icons">
+              <a class="level-item" href="https://github.com/scientific-python/" aria-label="https://github.com/scientific-python/">
+                <span class="icon"><i class="fab fa-github"></i></span>
+              </a>
+              <a class="level-item" href="https://www.youtube.com/channel/UC2wKi87Wmy9C1OQMyD9fGxA" aria-label="https://www.youtube.com/channel/UC2wKi87Wmy9C1OQMyD9fGxA">
+                <span class="icon"><i class="fab fa-youtube"></i></span>
+              </a>
+              <a class="level-item" href="https://twitter.com/scientific_py" aria-label="https://twitter.com/scientific_py">
+                <span class="icon"><i class="fab fa-twitter"></i></span>
+              </a>
+              <a class="level-item" href="https://facebook.com/scientific.python" aria-label="https://facebook.com/scientific.python">
+                <span class="icon"><i class="fab fa-facebook"></i></span>
+              </a>
+              <a class="level-item" href="https://www.instagram.com/scientific.python/" aria-label="https://www.instagram.com/scientific.python/">
+                <span class="icon"><i class="fab fa-instagram"></i></span>
+              </a>
+              <a class="level-item" href="https://www.tiktok.com/@scientific.python" aria-label="https://www.tiktok.com/@scientific.python">
+                <span class="icon"><i class="fab fa-tiktok"></i></span>
+              </a>
+            </div>
+          </nav>
+          <div class="copyright">&copy; 2021 Scientific Python. All rights reserved.</div>
+        </div>
+    </div>
+  </div>
+</footer>
+
+    
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="../../js/fresh.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.7.6/dist/js/uikit.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.7.6/dist/css/uikit.min.css" />
+
+<script src="../../js/shortcuts.js"></script>
+<script type="text/javascript">setupShortcuts(maxLevel= 2 );</script>
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" src="../../js/youtube_page.js"></script>
+
+
+
+
+
+
+
+
+
+
+    
+<script defer data-domain="scientific-python.org" src="https://views.scientific-python.org/js/script.js"></script>
+
+
+  </body>
+</html>
